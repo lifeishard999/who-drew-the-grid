@@ -1,0 +1,30 @@
+槽位名长尾复算    2026-10-09
+==============================================================================
+  槽位总数            8145
+  不同槽名（种数）    2109
+  只出现 1 次的种数   1515  ＝ 71.83%
+  前 10 种合计        2459  ＝ 30.19% 的词次
+
+  前 20 种：
+    hair color                   577   7.08%
+    subject                      483   5.93%
+    character name               395   4.85%
+    outfit                       239   2.93%
+    headline text                186   2.28%
+    clothing                     132   1.62%
+    location                     125   1.53%
+    style                        119   1.46%
+    brand name                   102   1.25%
+    background                   101   1.24%
+    hair style                   100   1.23%
+    setting                       87   1.07%
+    theme                         85   1.04%
+    character                     79   0.97%
+    color palette                 78   0.96%
+    tea name                      78   0.96%
+    subtitle text                 75   0.92%
+    city name                     70   0.86%
+    character description         67   0.82%
+    background color              64   0.79%
+
+  ★ 复现核对：旧记 2,109 种 / 71.8%% / 前10 30.19%% / hair color 7.08%%

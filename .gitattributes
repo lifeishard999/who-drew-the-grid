@@ -1,0 +1,7 @@
+# 行尾一律 LF，且在仓库内不做任何转换。
+# 本包附有 _包内文件MD5.txt，任何人 clone 后校验都必须字节一致；
+# 若让 Git 按平台自动换行（Windows 上 CRLF），MD5 会对不上。
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary

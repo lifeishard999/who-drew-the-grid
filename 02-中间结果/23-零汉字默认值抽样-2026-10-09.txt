@@ -1,0 +1,89 @@
+零汉字默认值的抽样与分类    2026-10-09
+==============================================================================
+  具名槽位总数 8145；默认值零汉字 2239（27.5%）；非零 5906
+
+【甲】零汉字默认值的**槽名**前 20 种（看它们是些什么格）
+------------------------------------------------------------------------------
+  character name               170
+  headline text                127
+  brand name                    88
+  subtitle text                 50
+  aspect ratio                  46
+  hair color                    46
+  English tea name              37
+  tagline                       36
+  subject                       31
+  main title                    30
+  magazine title                25
+  city name                     24
+  text                          24
+  name                          23
+  product name                  22
+  brand                         21
+  signature text                21
+  style                         17
+  title text                    17
+  title                         16
+
+【乙】零汉字默认值的**内容**前 20 种（看填的是什么）
+------------------------------------------------------------------------------
+  Longjing Tea                                37
+  GLITCH ANGEL                                25
+  beauty in static                            25
+  9:16                                        21
+  black                                       20
+  Clara                                       15
+  Fix headphones                              15
+  3:4                                         13
+  TOKYO                                       11
+  NOZOMU                                      10
+  2026                                         9
+  Nozomu                                       9
+  red                                          8
+  CHAse                                        8
+  Oyagi                                        8
+  HER19845                                     8
+  white                                        7
+  Ilya                                         7
+  Banas                                        6
+  のぞむ                                          6
+
+【丙】随机 30 条「槽名 = 默认值」（不排序，直接看）
+------------------------------------------------------------------------------
+  character                = Albedo
+  username                 = yui._.daily
+  main title               = JAPAN
+  English quote            = Japan is a beautiful country.
+  product name             = Banas
+  product name             = Banas
+  product name             = Banas™
+  product name             = Banas™
+  product name             = Banas™
+  brand name               = Banas
+  brand name               = Banas
+  brand name               = Banas™
+  brand name               = Banas™
+  year                     = 2026
+  quantity                 = 24
+  brand name               = Burger N
+  price                    = 89
+  price                    = 19
+  character name           = Serene Elegance
+  background color         = gray
+  aspect ratio             = 16:9
+  brand                    = Crocs
+  character name           = Samurai Mecha Girl
+  main title               = Samurai Mecha Girl
+  brand name               = TENNEN
+  style                    = Wireframe
+  style                    = wireframe
+  ratio                    = 9:16
+  English tea name         = Longjing Tea
+  English subtitle         = THE PAST AND PRESENT OF BLUEBERRIES
+
+【丁】分类计数（按默认值内容形态粗分）
+------------------------------------------------------------------------------
+  纯 ASCII（英文/数字）       2057
+  其中纯数字                     75
+  空字符串（default=""）          1
+  其他（含非汉字非 ASCII）      181

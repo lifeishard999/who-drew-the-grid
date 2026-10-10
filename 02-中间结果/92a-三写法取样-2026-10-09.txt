@@ -1,0 +1,60 @@
+同一具名槽位 · 三种表面写法 · 各取最短真例
+语料 = 5452 条   （口径沿用脚本 `36` 的扫描法，未做任何 strip）
+
+写法                      槽位数      记录数
+P  直引号式                8152     2932
+E1 转义式                  947      233
+E2 双反斜杠式                 19        4
+            ★ 三重并集     9118     3169
+
+==============================================================================
+【P  直引号式】共 8152 个；最长 989 字符 / 最短 33 字符
+  ── 最短的三个真例（原样）
+    len=33  id=27041
+      {argument name="age" default="9"}
+    len=34  id=13851
+      {argument name="age" default="22"}
+    len=34  id=14768
+      {argument name="pet" default="猫咪"}
+  ── 中间长度的两个（看是否只是值更长）
+    len=48  id=16404
+      {argument name="accent color" default="黑色与柔和粉色"}
+    len=48  id=16588
+      {argument name="author name" default="Han Kang"}
+  ── repr（看清反斜杠层数）
+    '{argument name="age" default="9"}'
+
+==============================================================================
+【E1 转义式】共 947 个；最长 282 字符 / 最短 37 字符
+  ── 最短的三个真例（原样）
+    len=37  id=13935
+      {argument name=\"发色\" default=\"金色\"}
+    len=39  id=13935
+      {argument name=\"眼睛颜色\" default=\"蓝色\"}
+    len=39  id=16400
+      {argument name=\"发色\" default=\"中栗棕色\"}
+  ── 中间长度的两个（看是否只是值更长）
+    len=54  id=19765
+      {argument name=\"headline text\" default=\"SHANGHAI\"}
+    len=54  id=19765
+      {argument name=\"primary landmark\" default=\"东方明珠塔\"}
+  ── repr（看清反斜杠层数）
+    '{argument name=\\"发色\\" default=\\"金色\\"}'
+
+==============================================================================
+【E2 双反斜杠式】共 19 个；最长 73 字符 / 最短 49 字符
+  ── 最短的三个真例（原样）
+    len=49  id=34650
+      {argument name=\\"active tab\\" default=\\"推荐\\"}
+    len=49  id=34693
+      {argument name=\\"fruit type\\" default=\\"柚子\\"}
+    len=51  id=34727
+      {argument name=\\"main title\\" default=\\"人类演化\\"}
+  ── 中间长度的两个（看是否只是值更长）
+    len=61  id=34693
+      {argument name=\\"model pose\\" default=\\"闭眼，脸部向上倾斜，表情宁静\\"}
+    len=61  id=34731
+      {argument name=\\"background color\\" default=\\"柔和的紫蓝色渐变\\"}
+  ── repr（看清反斜杠层数）
+    '{argument name=\\\\"active tab\\\\" default=\\\\"推荐\\\\"}'
+

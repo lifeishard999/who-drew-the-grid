@@ -1,0 +1,84 @@
+表内诸数 · 9,118 口径重算   语料 = 5452 条
+
+【零】自检：能不能复现旧数（9,090 口径）
+  含槽位记录        3169   （注[2]：3,165）
+  槽位总数          9118   （注[2]：9,090）
+  预制中位汉字       370   （注[2]：370）
+  槽位默认中位汉字   4.0   （注[2]：13）
+  零汉字默认值      2515   占 27.6%   （注[5]：2,509 / 27.6%）
+  槽名种数          2395   （§二：2,391）
+  只出现一次        1698   70.90%   （§二：七成以上）
+  前 10 名占比     29.22%   （§二：29.30%）
+
+【一】★ 9,118 口径下的表（对外报数用）
+  全库模板数                       5452
+  含具名槽位的模板数               3169  = 58.13%
+  不含槽位的模板数                 2283  = 41.87%
+  具名槽位总数                     9118
+  槽名种数                         2395
+  槽名只出现一次的占比             70.90%
+  前 10 名槽名的占比               29.22%
+  预制文本中位汉字（写模板的人）   370
+  槽位默认值中位汉字（填的人）     4.0
+  零汉字默认值的槽位               2515  = 27.58%
+  槽位名为纯拉丁字母的槽位         9077  = 99.55%
+
+【二】★ 画论词落在槽位默认值里（剔前）
+  含画论词的槽位（剔前）  51   （注[6]：50）
+  词次（剔前）            61   （注[6]：54）
+  分母＝全库画论词次      1,931  →  3.16%   （注[6] 原写 2.80%）
+
+  词频：水墨×17  青绿×11  山水×8  水墨画×5  淡彩×3  留白×3  印章×3  宣纸×2  工笔×1  工笔画×1  写意×1  毛笔×1  墨色×1  砚×1  意境×1  花鸟×1  卷轴×1
+
+  ---- 逐条列出（供人工重判同形异义；★ 不得静默丢弃）----
+    id=13749   name='illustration subject'       default='诸葛亮手持羽扇，立于汉军旗前，水墨画风格'
+    id=23248   name='background style'           default='室内水墨墙，配有松树和山峦'
+    id=20515   name='eye color'                  default='青绿色'
+    id=14325   name='style'                      default='工笔画风格'
+    id=13896   name='art style'                  default='中国传统水墨画'
+    id=21135   name='visual style'               default='电影级写实中国水墨画美学'
+    id=21206   name='main green color'           default='朦胧青绿色'
+    id=21132   name='art style'                  default='带有柔和淡彩笔触的中国古典山水画'
+    id=19445   name='detail'                     default='水墨飞溅笔触'
+    id=13494   name='background style'           default='纹理米色宣纸'
+    id=13494   name='art style'                  default='传统中国水墨画风格'
+    id=20033   name='background colors'          default='青绿色/水蓝色和深粉彩色'
+    id=18887   name='color palette'              default='黑色，陈旧米色，柔和青绿色，淡磷光消息卡片光芒'
+    id=27806   name='imagery'                    default='胭脂色花枝，翠绿色叶片，留白背景，微小人物，极淡的远山'
+    id=17096   name='texture'                    default='日式水墨 + 水彩纹理'
+    id=29194   name='print'                      default='大型宝蓝色玫瑰、叶片和写意花卉藤蔓印花'
+    id=19216   name='color palette'              default='柔和的淡彩色'
+    id=20488   name='illustration style'         default='表现力强的水墨素描和混合媒介插画风格'
+    id=21209   name='calligraphy text'           default='竖排古典毛笔书法及红色印章'
+    id=29387   name='character role'             default='山水女神'
+    id=29387   name='scene'                      default='高山水榭与青绿山水秘境'
+    id=24963   name='visual style'               default='超细节编辑时尚摄影与超现实日式水墨插画的融合'
+    id=22100   name='style'                      default='水彩与水墨风格'
+    id=25943   name='paper color'                default='宣纸象牙白'
+    id=21667   name='art texture'                default='手绘涂鸦风格，水墨飞溅笔触'
+    id=28990   name='composition'                default='不要过度安排构图；将其制作成一张在角度和留白上略有不规则的快照'
+    id=13794   name='visual style'               default='复古羊皮纸风格，武侠盗墓主题，细腻的水墨插画'
+    id=22342   name='background element'         default='巨大的红色圆形太阳或印章，中心带有抽象的黑色笔触符号'
+    id=14437   name='art style'                  default='空灵的中国水墨与水彩'
+    id=14437   name='calligraphy text'           default='山水如梦'
+    id=14437   name='main color palette'         default='青蓝色、暖金色、奶油色、淡粉色和炭墨色'
+    id=14437   name='composition focus'          default='由山水与飘逸长发构成的女性剪影'
+    id=17863   name='type'                       default='印章式'
+    id=25820   name='color palette'              default='珊瑚粉、桃色、水蓝色、青绿色和柔和的橙色'
+    id=23205   name='medium'                     default='水墨'
+    id=14034   name='art style'                  default='水彩与水墨双重曝光'
+    id=19345   name='hair color'                 default='青绿色'
+    id=21306   name='prop'                       default='砚台'
+    id=24818   name='hair color'                 default='青绿色双马尾'
+    id=22190   name='hair color'                 default='明亮的青绿色'
+    id=25524   name='style'                      default='传统中国水墨画'
+    id=22101   name='mood'                       default='氛围感强且怀旧的意境'
+    id=18419   name='hair color'                 default='青绿色'
+    id=21329   name='drawing style'              default='淡彩铅笔'
+    id=27364   name='landscape theme'            default='蓝绿色东亚山水'
+    id=25237   name='character name'             default='一位面部留白的柔和色调公主法师'
+    id=16012   name='subtitle text'              default='六朝古都·山水金陵'
+    id=22635   name='hair color'                 default='深青绿色'
+    id=25648   name='subject'                    default='花鸟画中的鸟儿'
+    id=20319   name='background decor'           default='字画卷轴、木质窗棂、纸灯笼和两支蜡烛'
+    id=34602   name='background style'           default='室内水墨墙面配松树和山峦'

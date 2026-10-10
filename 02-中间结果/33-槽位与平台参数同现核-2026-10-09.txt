@@ -1,0 +1,59 @@
+槽位 × 平台参数 同现核   语料 = 5452 条
+
+含槽位的记录          : 3169
+含 MJ --参数的记录    : 61
+含 SD 权重/lora 的记录: 12
+
+★ 同时含 槽位 与 MJ --参数 : 36
+★ 同时含 槽位 与 SD 权重/lora: 3
+
+【同现实例（至多 12 条，供抽查）】
+--------------------------------------------------------------------------
+id=15449  MJ参数=['--ar']
+    槽位=['{argument name="player name" default="Kylian Mbappé"}']
+    原文前 200 字: 一张极具戏剧性的竖版足球转会官宣海报，主角为 {argument name="player name" default="Kylian Mbappé"}，采用高端体育社交媒体图形设计风格。构图包含同一球员的两个视角：背景右上角是一个巨大的背影半身像，展示了黑红条纹 AC Milan 球衣的背面，肩部印有名字及醒目的 10 号数字；前景是一个全身动作姿态，球员正向观众奔跑，单手举起并食指向上。球员为
+
+id=14325  MJ参数=['--ar']
+    槽位=['{argument name="style" default="工笔画风格"}', '{argument name="attendants" default="小黄人"}', '{argument name="mood" default="幽默，时代错位融合"}']
+    原文前 200 字: 一幅采用 {argument name="style" default="工笔画风格"} 的中国传统水墨重彩画，呈现于陈旧的宣纸纹理之上。一位身着华丽唐代汉服的贵妃坐在木凳上，正手持现代吹风机吹干她飘逸的长发。她穿着黑色丝袜，一只脚穿着红色高跟鞋，搁在小凳上。三个身着中国古代仆人服饰并戴着帽子的 {argument name="attendants" default="小黄人"} 在旁伺候：左边的
+
+id=24425  MJ参数=['--ar', '--style', '--quality']
+    槽位=['{argument name="top" default="红色超大款短款运动衫"}', '{argument name="pants" default="浅蓝色做旧宽松牛仔裤"}', '{argument name="style" default="Q 版迷你卡通形象"}']
+    原文前 200 字: 超写实全身街头时尚肖像，一位开朗的年轻女性站在城市人行道上，背景是一座带有金属门和警示标志的现代工业风灰色建筑。她穿着一件 {argument name="top" default="红色超大款短款运动衫"}，上面印有醒目的白色“08”数字，戴着红色反戴棒球帽、圆形眼镜、叠戴金项链，穿着 {argument name="pants" default="浅蓝色做旧宽松牛仔裤"}，带有大面积破洞细节，
+
+id=24883  MJ参数=['--ar']
+    槽位=['{argument name="clothing" default="白色修身背心，红色格子迷你裙"}']
+    原文前 200 字: 超写实 Y2K 夏季时尚大片，年轻女性穿着 {argument name="clothing" default="白色修身背心，红色格子迷你裙"}，下巴处系着红色格纹头巾，佩戴白色长方形复古太阳镜，叠戴银色项链，穿着及膝白袜，留着深棕色长双麻花辫和柔和刘海，瓷器般的肌肤，无瑕哑光妆容，粉紫色眼影，纤细的洋娃娃睫毛，光泽感柔和的红粉色嘴唇。靠近镜头拿着四个巨大的华夫筒冰淇淋，俏皮酷飒的态度，微微嘟起
+
+id=13706  MJ参数=['--ar']
+    槽位=['{argument name="subject description" default="20 多岁韩国偶像型年轻女性"}', '{argument name="outfit" default="白色修身网球 Polo 衫或短袖运动上衣，搭配高腰白色网球裙"}', '{argument name="prop" default="白色网球拍"}']
+    原文前 200 字: 专业影棚时尚摄影，纯白无缝背景影棚中超洁净的高端数字杂志人像，巨大的八角柔光箱主光 + 大型柔光箱补光，营造出完美均匀的照明与柔和的塑形阴影，Vogue 级别的极简高定时尚美学，平视角度，3/4 全身像，{argument name="subject description" default="20 多岁韩国偶像型年轻女性"}，拥有超逼真精致的韩国女性特征，微微上挑的杏仁状狐狸眼，自然的双眼皮，小
+
+id=15888  MJ参数=['--ar']
+    槽位=['{argument name="subject" default="日本偶像"}', '{argument name="surface" default="镜面或玻璃反射"}']
+    原文前 200 字: 日系负片美学，反射表面场景，柔和自然光，轻微过曝高光，低对比度，柔和色调，细腻颗粒感，一位美丽的 {argument name="subject" default="日本偶像"} 通过 {argument name="surface" default="镜面或玻璃反射"} 呈现，身体部分入画，面部完全可见，通过反射直视镜头，姿态放松，层叠的反射，轻微畸变，不完美的构图，安静的观察视角，“所见即所得
+
+id=16211  MJ参数=['--ar']
+    槽位=['{argument name="aesthetic" default="柔和梦幻的编辑风美学"}', '{argument name="subject" default="年轻日本女性随意躺在床上"}', '{argument name="mood" default="梦幻且亲密的氛围"}']
+    原文前 200 字: {argument name="aesthetic" default="柔和梦幻的编辑风美学"}, 漫射自然光，轻微过曝，柔和高光晕染，低对比度，柔和色调，温和的粉色暖调，细腻颗粒感  {argument name="subject" default="年轻日本女性随意躺在床上"}, 放松的姿势，宽松柔软的衣物，头发略显凌乱，面部清晰可见，柔和且失焦的目光看向镜头  轻薄窗帘，发光氛围，柔和阴影，
+
+id=14726  MJ参数=['--ar']
+    槽位=['{argument name="animal" default="dog"}', '{argument name="object" default="coffee mug"}', '{argument name="text" default="No Coffee No Coddee"}']
+    原文前 200 字: 一只可爱的卡通 {argument name="animal" default="dog"} 手持一个冒着热气的 {argument name="object" default="coffee mug"}，纯白背景，底部带有柔和的浅绿色地面，居中构图，扁平化 2D 矢量插画，柔和轮廓，马卡龙配色，可爱氛围，上方文字："{argument name="text" default="No Coffee
+
+id=28356  MJ参数=['--ar']
+    槽位=['{argument name="idol type" default="女性 K-pop 偶像"}', '{argument name="outfit" default="露肩针织衫"}', '{argument name="date" default="2026 年 7 月"}']
+    原文前 200 字: 竖版手机壁纸，数字拼贴风格，杂志编辑排版。一位年轻的 {argument name="idol type" default="女性 K-pop 偶像"} 正面面对镜头，展示时尚穿搭细节。她穿着的 {argument name="outfit" default="露肩针织衫"} 上有精致的条纹，搭配前卫的厚底皮靴。潮流冷色调配色（银色、炭灰色、深黑色）。人物周围有白色剪纸边框。上方：简洁的 {arg
+
+id=27765  MJ参数=['--ar']
+    槽位=['{argument name="subject" default="一位年轻的亚洲女性"}', '{argument name="clothing" default="一件深色牛仔夹克"}', '{argument name="graphic elements" default="高饱和度的红色竖条、亮橙色圆圈、黑白半色调图案以及鸟类的素描插画"}']
+    原文前 200 字: 一幅混合媒介拼贴艺术作品，主体为 {argument name="subject" default="一位年轻的亚洲女性"}，留着黑色短波浪卷发，身穿 {argument name="clothing" default="一件深色牛仔夹克"}，直视镜头。一只手戏剧性地向镜头伸出，营造出强烈的透视缩短感和动态运动模糊效果。背景为平面海报设计，结合了 {argument name="graphic e
+
+id=27666  MJ参数=['--ar', '--v']
+    槽位=['{argument name="outfit" default="身着全白宽檐帽及长款结构感白色大衣的女性"}', '{argument name="animal" default="巨大的老虎"}', '{argument name="color" default="深绯红色"}']
+    原文前 200 字: 超现实主义时尚编辑肖像，{argument name="outfit" default="身着全白宽檐帽及长款结构感白色大衣的女性"}，铂金色头发，直面镜头，眼神坚定有力，{argument name="animal" default="巨大的老虎"} 伴随身侧，皮毛完全呈现 {argument name="color" default="深绯红色"}，与背景融为一体，虎纹以更深的红色调显现，虎脸
+
+id=27697  MJ参数=['--ar']
+    槽位=['{argument name="subject" default="20 岁出头的日本女性"}', '{argument name="clothing" default="半透明白色纯棉宽松衬衫"}', '{argument name="film stock" default="Fuji Superia 400"}']
+    原文前 200 字: 使用 50mm f/2 镜头拍摄的肖像，{argument name="subject" default="20 岁出头的日本女性"} 的中景特写，圆润柔和的脸庞，深邃的大眼睛配以自然的睫毛，视线微微向上看向布满雨痕的窗户，下巴抵在交叉的双臂上，表情：忧郁而宁静。她穿着一件 {argument name="clothing" default="半透明白色纯棉宽松衬衫"}，肩膀处略微透视。  上半身
+

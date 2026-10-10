@@ -1,0 +1,62 @@
+槽位三种写法 · 并集重算   语料 = 5452 条
+
+【一】按写法分列
+写法                       记录数     槽位数
+P  直引号式                 2932    8152
+E1 转义式                   233     947
+E2 双反斜杠式                   4      19
+★ 三重并集                  3169    9118
+
+【二】与 26 号（3,165 / 9,090）对账
+  26 号有、本脚本无 : 0   []
+  ★ 本脚本有、26 号无 : 4   [34650, 34693, 34727, 34731]
+  记录数之差         : 4
+
+【三】语言归属（★ 三重并集口径）
+  槽位名 name：
+    纯拉丁              9076   99.54%
+    纯汉字                41    0.45%
+    其他                  1    0.01%
+  默认值 default：
+    纯汉字              6249   68.53%
+    纯拉丁              2258   24.76%
+    中英混               354    3.88%
+    其他                256    2.81%
+    空串                  1    0.01%
+
+【四】分写法看槽位名（看三式是否一致）
+  P  直引号式              纯拉丁  8136 / 纯汉字  15 / 共 8152
+  E1 转义式               纯拉丁   921 / 纯汉字  26 / 共 947
+  E2 双反斜杠式             纯拉丁    19 / 纯汉字   0 / 共 19
+
+【五】交叉：名 × 值（三重并集）
+    纯拉丁       × 纯汉字          6214   68.15%
+    纯拉丁       × 纯拉丁          2254   24.72%
+    纯拉丁       × 中英混           351    3.85%
+    纯拉丁       × 其他            256    2.81%
+    纯汉字       × 纯汉字            34    0.37%
+    纯汉字       × 纯拉丁             4    0.04%
+    纯汉字       × 中英混             3    0.03%
+    纯拉丁       × 空串              1    0.01%
+
+【六】E2 双反斜杠式的全部实例（★ 新发现，逐条列）
+  共 19 个槽位 / 4 条记录
+    id=34650   name='active tab'                           default='推荐'
+    id=34650   name='streamer name'                        default='小甜心✨'
+    id=34650   name='chat message 1'                       default='唱得太好听了吧～'
+    id=34650   name='chat message 2'                       default='声音好温柔，爱了爱了'
+    id=34650   name='input placeholder'                    default='说点什么...'
+    id=34693   name='model pose'                           default='闭眼，脸部向上倾斜，表情宁静'
+    id=34693   name='fruit type'                           default='柚子'
+    id=34693   name='background scene'                     default='明亮的蓝天，漂浮着失焦的水滴和灿烂的阳光'
+    id=34693   name='main headline'                        default='ゆず香る、新しいわたし。'
+    id=34693   name='product name'                         default='YUZU SPARK'
+    id=34727   name='background style'                     default='复古纹理羊皮纸'
+    id=34727   name='staircase material'                   default='逼真的纹理石块'
+    id=34727   name='organism style'                       default='高度精细的照片级真实 3D 渲染'
+    id=34727   name='main title'                           default='人类演化'
+    id=34727   name='future evolution concept'             default='带有问号的发光宇宙剪影'
+    id=34731   name='background color'                     default='柔和的紫蓝色渐变'
+    id=34731   name='product name'                         default='Meta Quest 3'
+    id=34731   name='main catchphrase'                     default='以全新的结构，重塑全新的现实。'
+    id=34731   name='bottom headline'                      default='体验，源于结构的进化。'

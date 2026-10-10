@@ -1,0 +1,2335 @@
+==============================================================================
+水仙提示词库 · 核数与槽位全量实测     2026-10-09
+数据：F:\数据集\水仙提示词库\shuixian-unified\data
+记录总条数 5452
+==============================================================================
+
+【一】复核 2026-09-20 那轮的四条硬数
+  总槽位数              8145
+  含槽位记录            2932  = 53.78%  （分母＝记录数 5452）
+  平均每条槽位          1.49
+  非 slot 花括号        3420   ← 旧报告 3,420
+
+  ---- ★ 长度：两个口径并报（旧报告只报字符数却称"字"）----
+  固定文本  中位 497 字符 / 323 汉字    平均 724 字符 / 350 汉字
+  槽位默认  中位 6 字符 / 0 汉字    平均 17 字符 / 9 汉字
+  ★ 汉字口径下的比值 固定:默认 = 323.0 : 1
+
+  画论语汇落【固定文本】的记录 956 = 17.53%
+  画论语汇落【槽位默认值】的记录 40 = 0.73%
+
+==============================================================================
+【二】★ 补做 §八-4：花括号到底是什么语法
+==============================================================================
+  A·{argument name=.. default=..}      8141  (70.39%)
+  C·其他                                 3424  (29.61%)
+
+  ---- C 类（其他）样本，前 40 条 ----
+    {argument name=\"main title\" default=\"出师表\"}
+    {
+        "title": "学习目标",
+        "position": "右上角方框",
+        "count": 3,
+        "description": "带有柔和红色背景的编号学习目标"
+      }
+    {
+        "title": "课文",
+        "position": "左侧主栏",
+        "count": 6,
+        "description": "包含 14 个上标注释编号的古文段落"
+      }
+    {
+        "title": "注释",
+        "position": "插图下方右侧方框",
+        "count": 14,
+        "description": "与文中上标对应的编号词汇解释"
+      }
+    {
+        "title": "思考探究",
+        "position": "左下角",
+        "count": 2,
+        "description": "编号讨论题"
+      }
+    {
+      "count": 5,
+      "items": [
+        "主播手持的圆罐",
+        "桌上的圆罐",
+        "桌上的长方形礼盒",
+        "打开的罐子，内含干茶叶",
+        "盛有盛开粉色花朵的透明玻璃茶杯"
+      ],
+    {
+      "elements": ["19:37", "信号栏", "WiFi", "电池"]
+    }
+    {
+        "count": 3,
+        "text": "10万+",
+        "close_button": "X"
+      }
+    {"user": "可乐", "action": "送小心心", "combo": "x 16"}
+    {
+      "input_placeholder": "说点什么...",
+      "icons_count": 5,
+      "icons": ["笑脸", "购物车", "礼物", "爱心", "更多选项"]
+    }
+    {
+      "input_placeholder": "说点什么...",
+      "icon_count": 4,
+      "icons": ["笑脸", "心形星球", "礼物盒", "三个点"]
+    }
+    {"position":"左中铭牌","text":"のぞむ","secondary_text":"やさしくて、がんばりやさん。夢の中で、星たちとおはなしをするのが大すき。","style":"被红玫瑰环绕的小型华丽奶油色铭牌"}
+    {"position":"左下书页","text":"むかしむかし、あるところに のぞむという女の子がいました。のぞむは、赤いドレスがだいすき。夜になると、お月さまにそっとおはなしをしていました。","style":"带有大型装饰性首字母的日文印刷故事文本"}
+    {"face":"刻意模糊或遮挡","pose":"直立站姿，双臂放松，高定展示姿态"}
+    {"title":"一件女装诞生的因果链","position":"顶部标题","count":1,"labels":["THE CAUSAL CHAIN OF A WOMEN'S GARMENT"]}
+    {"title":"面料与材料","position":"左上","count":6,"labels":["纤维","纱线结构","织物结构","重量","垂坠感","表面质感"]}
+  去重后形态数 16
+
+==============================================================================
+【三】槽位名全表（共 2109 种）
+==============================================================================
+    1. hair color                          577
+    2. subject                             483
+    3. character name                      395
+    4. outfit                              239
+    5. headline text                       186
+    6. clothing                            132
+    7. location                            125
+    8. style                               119
+    9. brand name                          102
+   10. background                          101
+   11. hair style                          100
+   12. setting                              87
+   13. theme                                85
+   14. character                            79
+   15. color palette                        78
+   16. tea name                             78
+   17. subtitle text                        75
+   18. city name                            70
+   19. character description                67
+   20. background color                     64
+   21. main title                           63
+   22. aspect ratio                         57
+   23. dress color                          50
+   24. age                                  48
+   25. mood                                 45
+   26. eye color                            42
+   27. tagline                              42
+   28. art style                            40
+   29. accent color                         39
+   30. person                               38
+   31. English tea name                     37
+   32. ethnicity                            36
+   33. city                                 35
+   34. subtitle                             33
+   35. product name                         31
+   36. lighting                             29
+   37. outfit color                         28
+   38. magazine title                       28
+   39. text                                 27
+   40. title text                           27
+   41. name                                 26
+   42. shirt color                          25
+   43. outfit style                         25
+   44. expression                           25
+   45. product                              25
+   46. brand                                24
+   47. top                                  24
+   48. aesthetic                            23
+   49. title                                23
+   50. scene                                22
+   51. car model                            22
+   52. signature text                       22
+   53. top color                            20
+   54. lighting style                       20
+   55. character type                       20
+   56. pose                                 19
+   57. colors                               19
+   58. prop                                 19
+   59. color scheme                         18
+   60. main title text                      18
+   61. accessory                            18
+   62. quote                                18
+   63. hairstyle                            18
+   64. main headline                        17
+   65. tagline text                         16
+   66. topic                                15
+   67. correction                           15
+   68. country                              15
+   69. landmark                             14
+   70. object                               14
+   71. subject description                  14
+   72. player name                          14
+   73. date text                            14
+   74. clothing style                       14
+   75. headline                             14
+   76. environment                          14
+   77. signature                            14
+   78. time of day                          13
+   79. weapon                               13
+   80. color                                13
+   81. background style                     12
+   82. movie title                          12
+   83. slogan                               12
+   84. date                                 12
+   85. model                                12
+   86. animal                               12
+   87. drink                                12
+   88. censor block color                   11
+   89. release date                         11
+   90. composition                          11
+   91. atmosphere                           11
+   92. character style                      11
+   93. illustration style                   11
+   94. dress                                11
+   95. call to action                       10
+   96. visual style                         10
+   97. nationality                          10
+   98. destination                          10
+   99. clothing color                       10
+  100. year                                  9
+  101. robe color                            9
+  102. bottom tagline                        9
+  103. bottom caption                        9
+  104. lens                                  9
+  105. car color                             9
+  106. lighting mood                         9
+  107. hair color and style                  9
+  108. character role                        9
+  109. action                                8
+  110. country name                          8
+  111. English subtitle                      8
+  112. event                                 8
+  113. bottoms                               8
+  114. coat color                            8
+  115. platform                              8
+  116. dish name                             8
+  117. main color palette                    8
+  118. left character hair color             8
+  119. texture                               8
+  120. magazine name                         8
+  121. outfit colors                         8
+  122. jersey color                          8
+  123. dress style                           8
+  124. sign text                             8
+  125. doodle style                          7
+  126. artist name                           7
+  127. attire                                7
+  128. brand text                            7
+  129. footer text                           7
+  130. visual age                            7
+  131. dress colors                          7
+  132. era                                   7
+  133. flowers                               7
+  134. accessories                           7
+  135. food item                             7
+  136. masthead text                         7
+  137. athlete                               7
+  138. hair                                  7
+  139. main character                        7
+  140. photography style                     7
+  141. jacket color                          7
+  142. right character hair color            7
+  143. gender                                7
+  144. model description                     7
+  145. hoodie color                          7
+  146. car                                   7
+  147. flower type                           7
+  148. slogan text                           7
+  149. author name                           7
+  150. price                                 6
+  151. genre                                 6
+  152. bottom                                6
+  153. banner text                           6
+  154. layout                                6
+  155. subheadline text                      6
+  156. material                              6
+  157. jacket                                6
+  158. series title                          6
+  159. color theme                           6
+  160. quote text                            6
+  161. calligraphy text                      6
+  162. team                                  6
+  163. speech bubble text                    6
+  164. background scene                      6
+  165. decorative elements                   6
+  166. camera                                6
+  167. athlete name                          6
+  168. event name                            6
+  169. furniture                             6
+  170. lip color                             6
+  171. main subject                          6
+  172. issue number                          6
+  173. logo text                             6
+  174. jewelry type                          6
+  175. book title                            6
+  176. game title                            6
+  177. top tagline                           5
+  178. ratio                                 5
+  179. characters                            5
+  180. wedding date                          5
+  181. vertical text                         5
+  182. venue name                            5
+  183. activity                              5
+  184. bottom slogan                         5
+  185. makeup                                5
+  186. couple description                    5
+  187. vibe                                  5
+  188. bottom quote                          5
+  189. season                                5
+  190. product type                          5
+  191. background setting                    5
+  192. group description                     5
+  193. elements                              5
+  194. line color                            5
+  195. color tone                            5
+  196. film style                            5
+  197. outerwear                             5
+  198. top style                             5
+  199. palette                               5
+  200. skirt color                           5
+  201. main text                             5
+  202. cafe name                             5
+  203. scenery                               5
+  204. skirt                                 5
+  205. song title                            5
+  206. destination name                      5
+  207. face treatment                        5
+  208. location text                         5
+  209. caption text                          4
+  210. note text                             4
+  211. jersey number                         4
+  212. vehicle type                          4
+  213. main calligraphy                      4
+  214. fashion style                         4
+  215. footer slogan                         4
+  216. makeup style                          4
+  217. venue                                 4
+  218. camera type                           4
+  219. background details                    4
+  220. player                                4
+  221. time                                  4
+  222. date line                             4
+  223. shirt text                            4
+  224. main Chinese title                    4
+  225. jacket style                          4
+  226. category                              4
+  227. device                                4
+  228. vehicle                               4
+  229. top clothing                          4
+  230. count                                 4
+  231. skirt style                           4
+  232. costume colors                        4
+  233. background element                    4
+  234. poster text                           4
+  235. café name                             4
+  236. reference image                       4
+  237. subjects                              4
+  238. pet                                   4
+  239. character names                       4
+  240. subject name                          4
+  241. seal text                             4
+  242. typography                            4
+  243. release text                          4
+  244. cardigan color                        4
+  245. dessert                               4
+  246. poster title                          4
+  247. energy color                          4
+  248. greeting text                         4
+  249. coordinates                           4
+  250. model age                             3
+  251. landmarks                             3
+  252. age group                             3
+  253. poem text                             3
+  254. side quote                            3
+  255. main calligraphy text                 3
+  256. costume palette                       3
+  257. camera style                          3
+  258. team jersey                           3
+  259. festival title                        3
+  260. situation                             3
+  261. pants color                           3
+  262. main sign text                        3
+  263. space type                            3
+  264. pattern                               3
+  265. top slogan                            3
+  266. concept                               3
+  267. drink type                            3
+  268. van color                             3
+  269. dress description                     3
+  270. comic title                           3
+  271. collection title                      3
+  272. magic color                           3
+  273. background text                       3
+  274. team kit                              3
+  275. source                                3
+  276. couple names                          3
+  277. eyewear                               3
+  278. footballer                            3
+  279. brand style                           3
+  280. small caption                         3
+  281. feature title                         3
+  282. medium                                3
+  283. handwritten text                      3
+  284. primary color                         3
+  285. top color and style                   3
+  286. tone                                  3
+  287. background colors                     3
+  288. license plate text                    3
+  289. held object                           3
+  290. event title                           3
+  291. stand name                            3
+  292. animal companion                      3
+  293. woman outfit                          3
+  294. man outfit                            3
+  295. body copy                             3
+  296. exhibition title                      3
+  297. subheading                            3
+  298. overall mood                          3
+  299. main name text                        3
+  300. poem title                            3
+  301. character ethnicity                   3
+  302. clothing colors                       3
+  303. number                                3
+  304. issue text                            3
+  305. height                                3
+  306. gown style                            3
+  307. station name                          3
+  308. language                              3
+  309. campaign title                        3
+  310. footwear                              3
+  311. theme text                            3
+  312. studio name                           3
+  313. subheading text                       3
+  314. cardigan                              3
+  315. instrument                            3
+  316. glowing device color                  3
+  317. poster type                           3
+  318. solar term                            3
+  319. Tokyo label                           3
+  320. Dubai label                           3
+  321. badge text                            3
+  322. reference images                      3
+  323. shoes                                 3
+  324. mathematician                         3
+  325. issue date                            3
+  326. neon colors                           3
+  327. hat color                             3
+  328. human                                 3
+  329. model code                            3
+  330. fruit                                 3
+  331. price text                            3
+  332. accent colors                         3
+  333. catchphrase                           3
+  334. inspiration                           3
+  335. landscape                             3
+  336. sweater color                         3
+  337. bag color                             3
+  338. bottom style                          3
+  339. character age                         3
+  340. hat style                             3
+  341. bottom text                           3
+  342. english subtitle                      3
+  343. franchise title                       3
+  344. logo                                  3
+  345. weather                               3
+  346. subject ethnicity                     3
+  347. outfit theme                          3
+  348. brand tagline                         3
+  349. main palette                          3
+  350. page indicator                        3
+  351. ingredients                           3
+  352. vertical tagline                      3
+  353. obi color                             3
+  354. tagline line 1                        3
+  355. tagline line 2                        3
+  356. English quote                         2
+  357. main Japanese headline                2
+  358. supporting Japanese tagline           2
+  359. big benefit text                      2
+  360. left slogan                           2
+  361. target audience                       2
+  362. drink name                            2
+  363. inscription text                      2
+  364. Chinese title                         2
+  365. number of friends                     2
+  366. artwork concept                       2
+  367. body text                             2
+  368. region                                2
+  369. art theme                             2
+  370. garment color                         2
+  371. accessory accent                      2
+  372. kimono color                          2
+  373. main catchcopy                        2
+  374. website                               2
+  375. platform style                        2
+  376. character gender                      2
+  377. bag description                       2
+  378. recording time                        2
+  379. character traits                      2
+  380. main script text                      2
+  381. date and time                         2
+  382. venue address                         2
+  383. style name                            2
+  384. project title                         2
+  385. wall color                            2
+  386. food name                             2
+  387. story title                           2
+  388. main quote                            2
+  389. booth number                          2
+  390. exhibition dates                      2
+  391. sticker captions                      2
+  392. beverage type                         2
+  393. face covering                         2
+  394. side text                             2
+  395. event details                         2
+  396. background word                       2
+  397. flower colors                         2
+  398. bottom sticker text                   2
+  399. style inspiration                     2
+  400. store location                        2
+  401. promotion text                        2
+  402. franchise                             2
+  403. script title                          2
+  404. person attributes                     2
+  405. watermark text                        2
+  406. phone number                          2
+  407. mask position                         2
+  408. band name                             2
+  409. pants                                 2
+  410. side title                            2
+  411. bottom title                          2
+  412. beverage                              2
+  413. foliage                               2
+  414. character group                       2
+  415. handwriting style                     2
+  416. transformation target                 2
+  417. car description                       2
+  418. shirt                                 2
+  419. nameplate text                        2
+  420. dress color palette                   2
+  421. team colors                           2
+  422. ability name                          2
+  423. stall sign text                       2
+  424. doodle color                          2
+  425. man's hair color                      2
+  426. solar term title                      2
+  427. portrait style                        2
+  428. event date                            2
+  429. restaurant                            2
+  430. phone model                           2
+  431. skin type                             2
+  432. main flower                           2
+  433. expressions                           2
+  434. sticker text                          2
+  435. cafe sign                             2
+  436. facial details                        2
+  437. kit color                             2
+  438. bedding color                         2
+  439. effect                                2
+  440. region text                           2
+  441. surface                               2
+  442. team name                             2
+  443. cafe setting                          2
+  444. body part                             2
+  445. frame count                           2
+  446. edition label                         2
+  447. mascots                               2
+  448. bottom clothing                       2
+  449. player number                         2
+  450. flag                                  2
+  451. billboard text                        2
+  452. group size                            2
+  453. reference                             2
+  454. swimsuit color                        2
+  455. main outfit color                     2
+  456. room type                             2
+  457. secondary headline                    2
+  458. outfit one                            2
+  459. color tones                           2
+  460. gesture                               2
+  461. props                                 2
+  462. Japanese tagline                      2
+  463. subject theme                         2
+  464. character outfit                      2
+  465. main dragon style                     2
+  466. poster palette                        2
+  467. city setting                          2
+  468. graffiti text                         2
+  469. photo style                           2
+  470. paper type                            2
+  471. film stock                            2
+  472. thank you message                     2
+  473. dessert name                          2
+  474. outfit description                    2
+  475. character mood                        2
+  476. subject identity                      2
+  477. apparel                               2
+  478. base color                            2
+  479. text overlay                          2
+  480. graphic                               2
+  481. structure                             2
+  482. color accent                          2
+  483. lighting color                        2
+  484. fashion theme                         2
+  485. english title                         2
+  486. creator name                          2
+  487. typography color                      2
+  488. color grade                           2
+  489. publisher name                        2
+  490. doodle type                           2
+  491. kit                                   2
+  492. feature                               2
+  493. top Japanese name                     2
+  494. stage title                           2
+  495. headwear                              2
+  496. side tagline                          2
+  497. Japanese slogan                       2
+  498. blouse color                          2
+  499. details                               2
+  500. destination city                      2
+  501. main Chinese headline                 2
+  502. magazine                              2
+  503. gown color                            2
+  504. district                              2
+  505. blazer color                          2
+  506. cup text                              2
+  507. occasion                              2
+  508. camera angle                          2
+  509. character theme                       2
+  510. theme color                           2
+  511. group name                            2
+  512. fur color                             2
+  513. shoe color                            2
+  514. top quote                             2
+  515. character hair color                  2
+  516. number of panels                      2
+  517. description text                      2
+  518. rarity label                          2
+  519. file number                           2
+  520. tree type                             2
+  521. clothing item                         2
+  522. costume theme                         2
+  523. guitar color                          2
+  524. background landmark                   2
+  525. left cover text                       2
+  526. bottom name text                      2
+  527. top title text                        2
+  528. bouquet                               2
+  529. account name                          2
+  530. building name                         2
+  531. brand letter                          2
+  532. chalkboard text                       2
+  533. cities                                2
+  534. bow color                             2
+  535. character appearance                  2
+  536. vertical motto                        2
+  537. background character                  2
+  538. flower field                          2
+  539. character identity                    2
+  540. facial expression                     2
+  541. description                           2
+  542. cap text                              2
+  543. album title                           2
+  544. sky color                             2
+  545. core character                        2
+  546. scene title                           2
+  547. yukata color and pattern              2
+  548. face censor color                     2
+  549. android type                          2
+  550. romanized title                       2
+  551. city title                            2
+  552. follower milestone                    2
+  553. building type                         2
+  554. poster mood                           2
+  555. left girl hair color                  2
+  556. right girl hair color                 2
+  557. main Chinese character                2
+  558. issue line                            2
+  559. paint color                           2
+  560. bottom color                          2
+  561. upper character hair color            2
+  562. lower character hair color            2
+  563. credit text                           2
+  564. country label                         2
+  565. season and year                       2
+  566. English name                          2
+  567. top right headline                    2
+  568. male hair color                       2
+  569. female hair color                     2
+  570. background elements                   2
+  571. issue month                           2
+  572. kimono colors                         2
+  573. time display                          2
+  574. relay label                           2
+  575. typhoon headline                      2
+  576. broadcast place label                 2
+  577. typeface name                         2
+  578. lighting source                       2
+  579. sofa color                            2
+  580. poster headline                       2
+  581. country title                         2
+  582. category label                        2
+  583. London label                          2
+  584. Beijing label                         2
+  585. theme phrase                          2
+  586. destination title                     2
+  587. sports equipment                      2
+  588. figure number                         2
+  589. copyright text                        2
+  590. scenario                              2
+  591. 记分牌文字                                 2
+  592. 时尚风格                                  2
+  593. 调色板                                   2
+  594. 地点氛围                                  2
+  595. username                              1
+  596. hashtags                              1
+  597. subject content                       1
+  598. central food item                     1
+  599. top greeting text                     1
+  600. bottom promotional text               1
+  601. Japanese quote                        1
+  602. screening note                        1
+  603. background example                    1
+  604. dessert type                          1
+  605. dessert color                         1
+  606. top banner text                       1
+  607. subject profile                       1
+  608. background shape                      1
+  609. quantity                              1
+  610. animals                               1
+  611. anime genre                           1
+  612. vertical quote                        1
+  613. hair length                           1
+  614. second dress color                    1
+  615. group type                            1
+  616. work title                            1
+  617. model identity                        1
+  618. cover headline                        1
+  619. center outfit color                   1
+  620. core idea                             1
+  621. body type                             1
+  622. energy particles                      1
+  623. jersey name                           1
+  624. squad number                          1
+  625. main vertical text                    1
+  626. side name text                        1
+  627. text tone                             1
+  628. invitation number                     1
+  629. wedding time                          1
+  630. left vertical blessing                1
+  631. right vertical blessing               1
+  632. left hair color                       1
+  633. right hair color                      1
+  634. social media UI                       1
+  635. back name text                        1
+  636. headline intro                        1
+  637. headline main                         1
+  638. accessory color                       1
+  639. woman age                             1
+  640. character proportions                 1
+  641. top invitation text                   1
+  642. main calligraphy title                1
+  643. map title                             1
+  644. historical figure                     1
+  645. city district                         1
+  646. attendants                            1
+  647. meridian name                         1
+  648. character prototype                   1
+  649. acupoint light color                  1
+  650. full meridian name                    1
+  651. exclusive                             1
+  652. base unit                             1
+  653. size                                  1
+  654. layout style                          1
+  655. mood style                            1
+  656. interior style                        1
+  657. source photo                          1
+  658. font feel                             1
+  659. large title text                      1
+  660. benefit text                          1
+  661. footer title                          1
+  662. model type                            1
+  663. image color palette                   1
+  664. gift tag text                         1
+  665. small signature text                  1
+  666. movie name                            1
+  667. copywriting                           1
+  668. dye                                   1
+  669. center quote                          1
+  670. Chinese brand subtitle                1
+  671. comment                               1
+  672. head to body ratio                    1
+  673. tops                                  1
+  674. decor                                 1
+  675. character category                    1
+  676. portrait type                         1
+  677. subject gender                        1
+  678. grid count                            1
+  679. face anonymization                    1
+  680. age and gender                        1
+  681. ad style                              1
+  682. temperament                           1
+  683. main sky phrase                       1
+  684. sky phrase one                        1
+  685. sky phrase two                        1
+  686. sky phrase three                      1
+  687. top left text                         1
+  688. top center text                       1
+  689. right sky text                        1
+  690. small doodle text                     1
+  691. city street                           1
+  692. suit color                            1
+  693. story summary                         1
+  694. botanical name                        1
+  695. atelier location                      1
+  696. featured flower                       1
+  697. price sign text                       1
+  698. second price sign text                1
+  699. signature dish                        1
+  700. English greeting                      1
+  701. dish label                            1
+  702. clock text                            1
+  703. graphics card label                   1
+  704. Japanese plaque text                  1
+  705. English plaque text                   1
+  706. bottom question                       1
+  707. columns                               1
+  708. pupil color                           1
+  709. main color tone                       1
+  710. Chinese invitation title              1
+  711. invitation sentence                   1
+  712. venue and address                     1
+  713. character duo                         1
+  714. right character helmet                1
+  715. location label                        1
+  716. location setting                      1
+  717. subheading 1                          1
+  718. subheading 2                          1
+  719. chinese text                          1
+  720. flower color                          1
+  721. leaf color                            1
+  722. background tone                       1
+  723. landscape subject                     1
+  724. main filling                          1
+  725. pan type                              1
+  726. crispy finish                         1
+  727. main pink color                       1
+  728. main green color                      1
+  729. main setting                          1
+  730. world style                           1
+  731. gothic outfit                         1
+  732. poster phrase                         1
+  733. region tag                            1
+  734. series text                           1
+  735. signature handle                      1
+  736. text content                          1
+  737. media type                            1
+  738. outfit tone                           1
+  739. swimwear type                         1
+  740. football player                       1
+  741. venue and time                        1
+  742. heading                               1
+  743. art                                   1
+  744. visual elements                       1
+  745. couture house inspiration             1
+  746. city and greeting text                1
+  747. left vertical location                1
+  748. orange handwritten quote              1
+  749. trip type                             1
+  750. swimwear design                       1
+  751. liquid                                1
+  752. window color                          1
+  753. project name                          1
+  754. opening date                          1
+  755. area range                            1
+  756. bottom left brand text                1
+  757. jewelry                               1
+  758. detail                                1
+  759. scene setting                         1
+  760. anime style                           1
+  761. philosophical concept                 1
+  762. sky condition                         1
+  763. artistic form                         1
+  764. state                                 1
+  765. text label                            1
+  766. character trait                       1
+  767. clothing color palette                1
+  768. mood phrase                           1
+  769. morning note                          1
+  770. usage                                 1
+  771. ship                                  1
+  772. main_title                            1
+  773. birds                                 1
+  774. item list                             1
+  775. mood summary                          1
+  776. stain type                            1
+  777. weekday                               1
+  778. daily quote                           1
+  779. top panel scene                       1
+  780. style aesthetic                       1
+  781. small quote                           1
+  782. commercial mood                       1
+  783. main content                          1
+  784. effects                               1
+  785. graffiti phrase                       1
+  786. award line                            1
+  787. annotation style                      1
+  788. magazine cover                        1
+  789. morning blessing                      1
+  790. artistic style                        1
+  791. aperture                              1
+  792. guardian spirit motif                 1
+  793. symbolic theme                        1
+  794. stand name text                       1
+  795. ability title                         1
+  796. creature list                         1
+  797. number of days                        1
+  798. style focus                           1
+  799. drink top color                       1
+  800. drink bottom color                    1
+  801. sleeve color                          1
+  802. portrait reference                    1
+  803. hair reference                        1
+  804. alternate brand name                  1
+  805. primary patch text                    1
+  806. secondary patch text                  1
+  807. vintage year                          1
+  808. city slogan                           1
+  809. theme direction                       1
+  810. imagery                               1
+  811. man's hair                            1
+  812. woman's hair                          1
+  813. woman's hairstyle                     1
+  814. temple sign text                      1
+  815. district sign text                    1
+  816. gate plaque text                      1
+  817. brush phrase                          1
+  818. interior location                     1
+  819. event time                            1
+  820. floating symbols                      1
+  821. right headline                        1
+  822. plush toy count                       1
+  823. floor material                        1
+  824. line work                             1
+  825. coloring                              1
+  826. magazine type                         1
+  827. small descriptor text                 1
+  828. serial number                         1
+  829. season title                          1
+  830. romanized season name                 1
+  831. solar term label                      1
+  832. poetic copy                           1
+  833. growth system                         1
+  834. anime illustration                    1
+  835. case color palette                    1
+  836. phone case color                      1
+  837. phone case                            1
+  838. ethnicity and gender                  1
+  839. subject variation                     1
+  840. shot type                             1
+  841. edit style                            1
+  842. mecha                                 1
+  843. identity reference                    1
+  844. anime series                          1
+  845. official colors                       1
+  846. shapes                                1
+  847. people                                1
+  848. products                              1
+  849. plot                                  1
+  850. book spine text                       1
+  851. mug label                             1
+  852. main colors                           1
+  853. lighting tone                         1
+  854. bed color                             1
+  855. moment                                1
+  856. brand label                           1
+  857. corner logo                           1
+  858. campaign line                         1
+  859. dessert types                         1
+  860. cute phrases                          1
+  861. mount                                 1
+  862. title color                           1
+  863. shape style                           1
+  864. detail level                          1
+  865. seat color                            1
+  866. fashion item                          1
+  867. body part and shape                   1
+  868. item type                             1
+  869. item category                         1
+  870. killer phrase                         1
+  871. personality and traits                1
+  872. club name                             1
+  873. jersey description                    1
+  874. character poses                       1
+  875. miniature style                       1
+  876. athlete type                          1
+  877. bold text                             1
+  878. background train                      1
+  879. character props                       1
+  880. cafe sign text                        1
+  881. main jacket color                     1
+  882. position                              1
+  883. national flag colors                  1
+  884. main cover title                      1
+  885. gaze                                  1
+  886. fabric type                           1
+  887. storyboard title                      1
+  888. team color                            1
+  889. trophy                                1
+  890. jersey                                1
+  891. print                                 1
+  892. traveler                              1
+  893. gown description                      1
+  894. first cover line                      1
+  895. second cover line                     1
+  896. character versions                    1
+  897. season text                           1
+  898. basket contents                       1
+  899. character temperament                 1
+  900. background wall                       1
+  901. interior setting                      1
+  902. clothing styles                       1
+  903. recommendation text                   1
+  904. player identity                       1
+  905. woman                                 1
+  906. main heroine                          1
+  907. center heroine                        1
+  908. right heroine                         1
+  909. enemy type                            1
+  910. battle location                       1
+  911. design element                        1
+  912. large background word                 1
+  913. script headline                       1
+  914. collection name                       1
+  915. brand collaboration                   1
+  916. featured artist                       1
+  917. held item                             1
+  918. pose description                      1
+  919. main outfit text                      1
+  920. property name                         1
+  921. shadow text                           1
+  922. small title text                      1
+  923. artist label                          1
+  924. background state                      1
+  925. beanie color                          1
+  926. costume color                         1
+  927. glowing calligraphy text              1
+  928. Chinese name                          1
+  929. birthday blessing                     1
+  930. bottom date and detail                1
+  931. main phrase                           1
+  932. roman code                            1
+  933. traveler description                  1
+  934. type text                             1
+  935. mood text                             1
+  936. facial style                          1
+  937. topping                               1
+  938. journal style                         1
+  939. culture                               1
+  940. border color                          1
+  941. dynasty period                        1
+  942. headpiece style                       1
+  943. number of reference images            1
+  944. video length and theme                1
+  945. large caption                         1
+  946. boot color                            1
+  947. decorative element                    1
+  948. game one                              1
+  949. game two                              1
+  950. credits                               1
+  951. smartphone                            1
+  952. bedroom style                         1
+  953. fashion brand                         1
+  954. studio background                     1
+  955. clothing set                          1
+  956. accent palette                        1
+  957. Solar Term                            1
+  958. Solar Term Name                       1
+  959. English Translation                   1
+  960. screen content                        1
+  961. hero text                             1
+  962. yukata pattern                        1
+  963. novel excerpt                         1
+  964. largest emphasized phrase             1
+  965. scene meta                            1
+  966. camera shot                           1
+  967. interaction type                      1
+  968. headdress style                       1
+  969. brand and product                     1
+  970. keywords                              1
+  971. place name                            1
+  972. cafe atmosphere                       1
+  973. outfit two                            1
+  974. outfit three                          1
+  975. musical theme                         1
+  976. character concept                     1
+  977. garden setting                        1
+  978. dress color and style                 1
+  979. haircut                               1
+  980. idol type                             1
+  981. plaque text                           1
+  982. overview heading                      1
+  983. bride count and identity              1
+  984. flower bouquet                        1
+  985. graphic elements                      1
+  986. color harmony                         1
+  987. character age/style                   1
+  988. product label                         1
+  989. worker uniform color                  1
+  990. technique                             1
+  991. style description                     1
+  992. swimwear                              1
+  993. momentum                              1
+  994. physical features                     1
+  995. sweater style                         1
+  996. sock style                            1
+  997. main slogan                           1
+  998. floor word                            1
+  999. lecture date                          1
+  1000. bridge style                          1
+  1001. viewpoint                             1
+  1002. film simulation                       1
+  1003. guitar                                1
+  1004. vertical title                        1
+  1005. english slogan line one               1
+  1006. english slogan line two               1
+  1007. background gradient                   1
+  1008. flavor elements                       1
+  1009. liquid dress color                    1
+  1010. Paris label                           1
+  1011. New York label                        1
+  1012. reference avatar                      1
+  1013. label text                            1
+  1014. badge subtitle                        1
+  1015. city location                         1
+  1016. store sign text                       1
+  1017. number of pedestrians                 1
+  1018. core color                            1
+  1019. identity                              1
+  1020. clothing material                     1
+  1021. background items                      1
+  1022. workers                               1
+  1023. tea color                             1
+  1024. menu text                             1
+  1025. flower theme                          1
+  1026. campaign mood                         1
+  1027. brand tone                            1
+  1028. campaign                              1
+  1029. umbrella                              1
+  1030. frame type                            1
+  1031. locations                             1
+  1032. video scenario                        1
+  1033. overlay text                          1
+  1034. interior architecture                 1
+  1035. poses                                 1
+  1036. headline topic                        1
+  1037. country team                          1
+  1038. jersey chest text                     1
+  1039. upper left text                       1
+  1040. shirt type                            1
+  1041. room aesthetic                        1
+  1042. character inspiration                 1
+  1043. outfit types                          1
+  1044. brand keywords                        1
+  1045. zodiac theme                          1
+  1046. eye details                           1
+  1047. aspect                                1
+  1048. top title                             1
+  1049. bottom left quote                     1
+  1050. bottom right quote                    1
+  1051. magazine cover text                   1
+  1052. cake color                            1
+  1053. regional style                        1
+  1054. character details                     1
+  1055. player type                           1
+  1056. branding style                        1
+  1057. record number                         1
+  1058. record label                          1
+  1059. timestamp                             1
+  1060. proportions                           1
+  1061. background theme                      1
+  1062. avatar style                          1
+  1063. color accents                         1
+  1064. lingerie                              1
+  1065. poetic line                           1
+  1066. format                                1
+  1067. river                                 1
+  1068. environmental elements                1
+  1069. role description                      1
+  1070. center idol hair color                1
+  1071. left idol hair color                  1
+  1072. right idol hair color                 1
+  1073. bicycle color                         1
+  1074. form                                  1
+  1075. plaque title                          1
+  1076. plaque quote                          1
+  1077. interaction                           1
+  1078. wish                                  1
+  1079. placement note                        1
+  1080. view                                  1
+  1081. font family                           1
+  1082. paint finish                          1
+  1083. aesthetic period                      1
+  1084. shoe model                            1
+  1085. author                                1
+  1086. poster theme                          1
+  1087. robot colors                          1
+  1088. beverage name                         1
+  1089. mural subject                         1
+  1090. shorts color                          1
+  1091. jacket accents                        1
+  1092. top logo text                         1
+  1093. bottom caption text                   1
+  1094. emotion                               1
+  1095. floral element                        1
+  1096. red color code                        1
+  1097. green color code                      1
+  1098. desk setting                          1
+  1099. controller color                      1
+  1100. top left slogan                       1
+  1101. upper right slogan                    1
+  1102. lower left slogan                     1
+  1103. lower right slogan                    1
+  1104. fashion mood                          1
+  1105. garment patterns                      1
+  1106. companion                             1
+  1107. script slogan                         1
+  1108. burst text                            1
+  1109. print pattern                         1
+  1110. socks                                 1
+  1111. pavement color                        1
+  1112. front character name                  1
+  1113. rear character name                   1
+  1114. moon color                            1
+  1115. clothing type                         1
+  1116. clothing accessory                    1
+  1117. held prop                             1
+  1118. lipstick color                        1
+  1119. ink color                             1
+  1120. paper color                           1
+  1121. main word                             1
+  1122. left robe color                       1
+  1123. right robe color                      1
+  1124. magical smoke color                   1
+  1125. accent item                           1
+  1126. style reference 1                     1
+  1127. style reference 2                     1
+  1128. figure scale                          1
+  1129. main armor color                      1
+  1130. original subject                      1
+  1131. target object                         1
+  1132. extras                                1
+  1133. social id                             1
+  1134. speaker                               1
+  1135. collage style                         1
+  1136. decorative lines                      1
+  1137. dress pattern                         1
+  1138. Japanese name text                    1
+  1139. background texture                    1
+  1140. information blocks                    1
+  1141. region label                          1
+  1142. outfit details                        1
+  1143. column count                          1
+  1144. top headline text                     1
+  1145. right headline text                   1
+  1146. bottom headline text                  1
+  1147. series label                          1
+  1148. headscarf                             1
+  1149. studio style                          1
+  1150. graphic element                       1
+  1151. enhancement strength                  1
+  1152. detail priority                       1
+  1153. fragrance name                        1
+  1154. main flower color                     1
+  1155. bench type                            1
+  1156. brand monogram                        1
+  1157. darkness tagline                      1
+  1158. gold tagline                          1
+  1159. time tagline                          1
+  1160. future tagline                        1
+  1161. character action                      1
+  1162. year number                           1
+  1163. upper right quote                     1
+  1164. lower right headline                  1
+  1165. venue city                            1
+  1166. theme object                          1
+  1167. booking text                          1
+  1168. color count                           1
+  1169. collection label                      1
+  1170. upper caption                         1
+  1171. lower caption                         1
+  1172. city style                            1
+  1173. workspace                             1
+  1174. room                                  1
+  1175. tournament name                       1
+  1176. motorcycle model                      1
+  1177. first character                       1
+  1178. first pet                             1
+  1179. aesthetic mood                        1
+  1180. backdrop color                        1
+  1181. top left title                        1
+  1182. middle right title                    1
+  1183. bottom left title                     1
+  1184. clothing design                       1
+  1185. footer headline                       1
+  1186. tagline one                           1
+  1187. hair clip color                       1
+  1188. t-shirt color                         1
+  1189. brand text inside collar              1
+  1190. hero number                           1
+  1191. subheadline                           1
+  1192. pedestal style                        1
+  1193. eye style                             1
+  1194. central outfit                        1
+  1195. top left outfit                       1
+  1196. top right outfit                      1
+  1197. cartoon characters                    1
+  1198. decoration style                      1
+  1199. wall                                  1
+  1200. collection type                       1
+  1201. target                                1
+  1202. archetype                             1
+  1203. reporter                              1
+  1204. keyword                               1
+  1205. stamp text                            1
+  1206. activities                            1
+  1207. objects                               1
+  1208. race and class                        1
+  1209. output style                          1
+  1210. Chinese guide title                   1
+  1211. border style                          1
+  1212. stone inscription                     1
+  1213. feel                                  1
+  1214. art texture                           1
+  1215. item                                  1
+  1216. media                                 1
+  1217. traits                                1
+  1218. models                                1
+  1219. upper left handwritten text           1
+  1220. upper right bubble text               1
+  1221. lower left bubble text                1
+  1222. middle right highlight text           1
+  1223. lower right bubble text               1
+  1224. machine color                         1
+  1225. can text                              1
+  1226. product category                      1
+  1227. kanji text                            1
+  1228. first dish                            1
+  1229. second dish                           1
+  1230. nail art                              1
+  1231. release date text                     1
+  1232. hair texture                          1
+  1233. app name                              1
+  1234. flower motif                          1
+  1235. top notice text                       1
+  1236. brand wordmark                        1
+  1237. element                               1
+  1238. photo type                            1
+  1239. hair highlights                       1
+  1240. t-shirt label                         1
+  1241. subtext                               1
+  1242. brand logo                            1
+  1243. character profile                     1
+  1244. character subject                     1
+  1245. collaboration text                    1
+  1246. giant city text                       1
+  1247. director                              1
+  1248. furniture type                        1
+  1249. theme name                            1
+  1250. word                                  1
+  1251. background palette                    1
+  1252. flooring                              1
+  1253. team style                            1
+  1254. jersey style                          1
+  1255. pants type                            1
+  1256. restaurant name                       1
+  1257. dish title                            1
+  1258. travel destination                    1
+  1259. manga inspiration                     1
+  1260. outline color                         1
+  1261. bag style                             1
+  1262. style keywords                        1
+  1263. pull quote                            1
+  1264. left emphasis text                    1
+  1265. accusation quote                      1
+  1266. vertical headline                     1
+  1267. license plate                         1
+  1268. photography vibe                      1
+  1269. social media handle                   1
+  1270. light color                           1
+  1271. blanket color                         1
+  1272. broadcast date                        1
+  1273. chosen flower                         1
+  1274. handwritten name                      1
+  1275. primary theme                         1
+  1276. alternative theme                     1
+  1277. clothing color system                 1
+  1278. poster slogan                         1
+  1279. angle                                 1
+  1280. car type                              1
+  1281. award                                 1
+  1282. top left logo                         1
+  1283. bottom right logo                     1
+  1284. Hanfu style                           1
+  1285. mask color                            1
+  1286. top catchphrase                       1
+  1287. mecha color                           1
+  1288. pilot description                     1
+  1289. english name                          1
+  1290. bottom description                    1
+  1291. background poster                     1
+  1292. neon text                             1
+  1293. quality claim                         1
+  1294. website line                          1
+  1295. frame                                 1
+  1296. vertical slogan                       1
+  1297. series logo                           1
+  1298. unit name text                        1
+  1299. anniversary text                      1
+  1300. front character                       1
+  1301. back character hair color             1
+  1302. tag text                              1
+  1303. dancer type                           1
+  1304. large Japanese title                  1
+  1305. right side slogan                     1
+  1306. lower left quote                      1
+  1307. male character hair color             1
+  1308. female character hair color           1
+  1309. animal subject                        1
+  1310. doodle character                      1
+  1311. altitude text                         1
+  1312. planet                                1
+  1313. burger type                           1
+  1314. scaffold sign text                    1
+  1315. box headline text                     1
+  1316. brand drink                           1
+  1317. subtitle line one                     1
+  1318. subtitle line two                     1
+  1319. opponent                              1
+  1320. bottle label text                     1
+  1321. contact details                       1
+  1322. age range                             1
+  1323. qipao color                           1
+  1324. music player interface                1
+  1325. hanfu colors                          1
+  1326. tent color                            1
+  1327. maid outfit color                     1
+  1328. background location                   1
+  1329. serving prop                          1
+  1330. skin tone                             1
+  1331. chair style                           1
+  1332. materials                             1
+  1333. measurement unit                      1
+  1334. surface finishes                      1
+  1335. guardian                              1
+  1336. energy effect                         1
+  1337. food                                  1
+  1338. character age and style               1
+  1339. main background word                  1
+  1340. resolution target                     1
+  1341. blur effect                           1
+  1342. building_name                         1
+  1343. main outfit palette                   1
+  1344. operation title                       1
+  1345. subject status                        1
+  1346. original trait                        1
+  1347. poster style                          1
+  1348. main theme text                       1
+  1349. petals                                1
+  1350. restaurant sign text                  1
+  1351. year text                             1
+  1352. tower color                           1
+  1353. composition focus                     1
+  1354. content topic                         1
+  1355. subtitle quote                        1
+  1356. tea type                              1
+  1357. tagline 1                             1
+  1358. tagline 2                             1
+  1359. female character description          1
+  1360. male character description            1
+  1361. handwritten quote                     1
+  1362. store slogan                          1
+  1363. English brand name                    1
+  1364. Chinese brand name                    1
+  1365. projected pattern                     1
+  1366. quality line                          1
+  1367. weight text                           1
+  1368. jar lid color                         1
+  1369. bubble text                           1
+  1370. hoodie style                          1
+  1371. left hand object                      1
+  1372. right hand object                     1
+  1373. monitor text                          1
+  1374. equipment label                       1
+  1375. views                                 1
+  1376. foreground camera                     1
+  1377. background scale                      1
+  1378. lower left label                      1
+  1379. button label                          1
+  1380. hat type                              1
+  1381. type                                  1
+  1382. background feature                    1
+  1383. height difference                     1
+  1384. foreground element                    1
+  1385. hoodie color and pattern              1
+  1386. bridge sign text                      1
+  1387. store name                            1
+  1388. desired color                         1
+  1389. tank top text                         1
+  1390. local city text                       1
+  1391. sticker labels                        1
+  1392. lighting effect                       1
+  1393. neon palette                          1
+  1394. mood reference                        1
+  1395. age text                              1
+  1396. pants style                           1
+  1397. awning text                           1
+  1398. menu heading                          1
+  1399. style era                             1
+  1400. front machine label                   1
+  1401. console text                          1
+  1402. city names                            1
+  1403. scene inside hole                     1
+  1404. book text style                       1
+  1405. small caption text                    1
+  1406. bottom title text                     1
+  1407. key message text                      1
+  1408. supporting copy                       1
+  1409. photo subject                         1
+  1410. architectural feature                 1
+  1411. stadium                               1
+  1412. shopkeeper                            1
+  1413. shop_type                             1
+  1414. faction                               1
+  1415. character characteristics             1
+  1416. fruit theme                           1
+  1417. left character                        1
+  1418. right character                       1
+  1419. animal ears                           1
+  1420. print style                           1
+  1421. halftone                              1
+  1422. team era                              1
+  1423. calligraphy title                     1
+  1424. vertical poem text                    1
+  1425. school uniform style                  1
+  1426. food items                            1
+  1427. creature accent color                 1
+  1428. top text                              1
+  1429. middle text                           1
+  1430. accent flowers                        1
+  1431. mecha identifier                      1
+  1432. hangar block label                    1
+  1433. test label                            1
+  1434. outerwear color                       1
+  1435. helmet color                          1
+  1436. feature headline                      1
+  1437. character group theme                 1
+  1438. bookshelf setting                     1
+  1439. caption language                      1
+  1440. featured drink                        1
+  1441. canvas ratio                          1
+  1442. issue date and price                  1
+  1443. main feature headline                 1
+  1444. tactics label                         1
+  1445. canopy colors                         1
+  1446. figurine style                        1
+  1447. bed surface                           1
+  1448. work                                  1
+  1449. sky                                   1
+  1450. backpack color                        1
+  1451. aircraft                              1
+  1452. class                                 1
+  1453. doodles                               1
+  1454. landmark tower                        1
+  1455. role text                             1
+  1456. skin                                  1
+  1457. cover name                            1
+  1458. model features                        1
+  1459. mountain                              1
+  1460. sky character                         1
+  1461. calligraphy character                 1
+  1462. patch type                            1
+  1463. small cover note                      1
+  1464. left footer text                      1
+  1465. right footer text                     1
+  1466. decorations                           1
+  1467. milestone number                      1
+  1468. Japanese message                      1
+  1469. themes                                1
+  1470. wardrobe style                        1
+  1471. signature name                        1
+  1472. character and expression              1
+  1473. clothing and pose                     1
+  1474. left sister outfit                    1
+  1475. right sister outfit                   1
+  1476. fruit name                            1
+  1477. headline line 1                       1
+  1478. headline line 2                       1
+  1479. table title                           1
+  1480. station sign text                     1
+  1481. left character role                   1
+  1482. right character role                  1
+  1483. cuisine type                          1
+  1484. dress material                        1
+  1485. live content                          1
+  1486. perspective                           1
+  1487. left shop sign                        1
+  1488. chalkboard sign                       1
+  1489. right shop sign                       1
+  1490. main subject silhouette               1
+  1491. top scenery                           1
+  1492. central character                     1
+  1493. bottom scenery                        1
+  1494. population value                      1
+  1495. capital city                          1
+  1496. official language                     1
+  1497. reproduction style                    1
+  1498. central figure                        1
+  1499. style direction                       1
+  1500. number of styles                      1
+  1501. focal length                          1
+  1502. skirt pattern                         1
+  1503. text 1                                1
+  1504. text 2                                1
+  1505. text 3                                1
+  1506. main Japanese title                   1
+  1507. poster number                         1
+  1508. lead singer                           1
+  1509. festival theme                        1
+  1510. jersey text                           1
+  1511. top handwritten text                  1
+  1512. main headline text                    1
+  1513. bottom handwritten text               1
+  1514. kitten color                          1
+  1515. alley sign text                       1
+  1516. chat message                          1
+  1517. base element                          1
+  1518. internal scene                        1
+  1519. sports ball                           1
+  1520. resort name                           1
+  1521. location mood                         1
+  1522. persona                               1
+  1523. english city name                     1
+  1524. silhouette                            1
+  1525. number of women                       1
+  1526. Japanese signs                        1
+  1527. tote bag logo                         1
+  1528. street setting                        1
+  1529. face block color                      1
+  1530. reference photo                       1
+  1531. garnish                               1
+  1532. foreground plate color                1
+  1533. background plate color                1
+  1534. right scroll title                    1
+  1535. glass type                            1
+  1536. celestial body                        1
+  1537. crop style                            1
+  1538. game engine                           1
+  1539. game scene                            1
+  1540. pajama color                          1
+  1541. grid layout                           1
+  1542. left calligraphy                      1
+  1543. sleep sound effect                    1
+  1544. foreground elements                   1
+  1545. Chinese headline text                 1
+  1546. bowl text                             1
+  1547. right wall sign                       1
+  1548. left wall sign                        1
+  1549. ramen poster price                    1
+  1550. left model label                      1
+  1551. right model label                     1
+  1552. left outfit color                     1
+  1553. right outfit color                    1
+  1554. secondary graffiti                    1
+  1555. trainer description                   1
+  1556. room style                            1
+  1557. korean text                           1
+  1558. butter note                           1
+  1559. closing phrase                        1
+  1560. left Japanese headline                1
+  1561. right Japanese phrase                 1
+  1562. section label                         1
+  1563. footer note                           1
+  1564. festival text                         1
+  1565. foreground character                  1
+  1566. architecture                          1
+  1567. job title                             1
+  1568. institution                           1
+  1569. goal                                  1
+  1570. dish type                             1
+  1571. character 1 hair                      1
+  1572. character 1 outfit                    1
+  1573. character 2 hair                      1
+  1574. character 2 outfit                    1
+  1575. athlete description                   1
+  1576. running outfit                        1
+  1577. game genre                            1
+  1578. right-side tagline                    1
+  1579. dress color and material              1
+  1580. korean title                          1
+  1581. character appearance and pose         1
+  1582. background color scheme               1
+  1583. adult subject                         1
+  1584. child subject                         1
+  1585. doodle text                           1
+  1586. magical element                       1
+  1587. aesthetic style                       1
+  1588. signboard text                        1
+  1589. overall theme                         1
+  1590. main silhouette subject               1
+  1591. dominant color palette                1
+  1592. companion character                   1
+  1593. ribbon color                          1
+  1594. cheese type                           1
+  1595. trouser color                         1
+  1596. sky color palette                     1
+  1597. display text                          1
+  1598. main fan phrase                       1
+  1599. divine praise phrase                  1
+  1600. ferry label                           1
+  1601. city and year                         1
+  1602. event dates                           1
+  1603. limited goods label                   1
+  1604. t shirt label                         1
+  1605. sales period                          1
+  1606. main poster text                      1
+  1607. small logo text                       1
+  1608. male character species                1
+  1609. female character look                 1
+  1610. clothing and accessories              1
+  1611. object being bitten                   1
+  1612. secondary scene                       1
+  1613. cyan sign text                        1
+  1614. talisman text                         1
+  1615. shirt label                           1
+  1616. project label                         1
+  1617. panel text                            1
+  1618. file format                           1
+  1619. driver type                           1
+  1620. car style                             1
+  1621. car finish                            1
+  1622. handwritten message                   1
+  1623. top bar text                          1
+  1624. technology                            1
+  1625. skin realism level                    1
+  1626. character age and outfit              1
+  1627. company name                          1
+  1628. manufactured item                     1
+  1629. machine product name                  1
+  1630. tour stamp text                       1
+  1631. color mood                            1
+  1632. background detail level               1
+  1633. swimsuit logo text                    1
+  1634. cup logo text                         1
+  1635. main graffiti text                    1
+  1636. name graffiti                         1
+  1637. large left graffiti                   1
+  1638. upper right graffiti                  1
+  1639. blue name graffiti                    1
+  1640. slime girl description                1
+  1641. tanuki girl description               1
+  1642. trip theme                            1
+  1643. Japanese headline text                1
+  1644. country text                          1
+  1645. romanized location                    1
+  1646. left banner text                      1
+  1647. right banner text                     1
+  1648. female character hair                 1
+  1649. female character eyes                 1
+  1650. hologram theme                        1
+  1651. flower types                          1
+  1652. number of people                      1
+  1653. footer message                        1
+  1654. posture                               1
+  1655. mountain location                     1
+  1656. robe colors                           1
+  1657. orientation                           1
+  1658. calendar month                        1
+  1659. seasonal greeting                     1
+  1660. singer name                           1
+  1661. English translation                   1
+  1662. volume label                          1
+  1663. Chinese quote                         1
+  1664. vertical phrase                       1
+  1665. AI character name                     1
+  1666. subject aesthetic                     1
+  1667. ride type                             1
+  1668. ride cost                             1
+  1669. top caption                           1
+  1670. head accessory                        1
+  1671. signpost text top                     1
+  1672. signpost text middle                  1
+  1673. signpost text bottom                  1
+  1674. left shop sign text                   1
+  1675. right shop sign text                  1
+  1676. brand one                             1
+  1677. brand two                             1
+  1678. subject style                         1
+  1679. era label                             1
+  1680. blueprint style                       1
+  1681. male character name                   1
+  1682. female character name                 1
+  1683. glowing object                        1
+  1684. robe color and pattern                1
+  1685. embroidery                            1
+  1686. bottom headline                       1
+  1687. left title text                       1
+  1688. right title text                      1
+  1689. destination country                   1
+  1690. script quote                          1
+  1691. character 1                           1
+  1692. character 2                           1
+  1693. main title first line                 1
+  1694. main title second line                1
+  1695. highlighted model label               1
+  1696. bottom left model label               1
+  1697. second character hair color           1
+  1698. mask                                  1
+  1699. airplane description                  1
+  1700. hangar sign text                      1
+  1701. small top text                        1
+  1702. dog name                              1
+  1703. weapon name                           1
+  1704. personification title                 1
+  1705. region name                           1
+  1706. headline country                      1
+  1707. data                                  1
+  1708. title concept                         1
+  1709. city name in English                  1
+  1710. song                                  1
+  1711. trainer character                     1
+  1712. scene theme                           1
+  1713. left panel text                       1
+  1714. right panel text                      1
+  1715. handwritten phrase                    1
+  1716. exit sign color                       1
+  1717. dominant color                        1
+  1718. director name                         1
+  1719. French title                          1
+  1720. left quote                            1
+  1721. right quote                           1
+  1722. kimono palette                        1
+  1723. subject age and ethnicity             1
+  1724. lighting theme                        1
+  1725. city inspiration                      1
+  1726. tournament wallpaper style            1
+  1727. filter                                1
+  1728. necklace pendants                     1
+  1729. lighting and weather                  1
+  1730. painting subject                      1
+  1731. boat details                          1
+  1732. dish                                  1
+  1733. ingredient                            1
+  1734. portfolio value label                 1
+  1735. main loss amount                      1
+  1736. daily change text                     1
+  1737. loss report title                     1
+  1738. holdings list title                   1
+  1739. vegetable                             1
+  1740. unit name                             1
+  1741. district name                         1
+  1742. city subtitle                         1
+  1743. character age vibe                    1
+  1744. brand A                               1
+  1745. brand B                               1
+  1746. terrain                               1
+  1747. quote 1                               1
+  1748. quote 2                               1
+  1749. quote 3                               1
+  1750. apron                                 1
+  1751. title content                         1
+  1752. journal phrase                        1
+  1753. tape label                            1
+  1754. polaroid caption                      1
+  1755. memo title                            1
+  1756. outfit jacket color                   1
+  1757. location style                        1
+  1758. handwritten Japanese text             1
+  1759. editorial caption                     1
+  1760. animal topic                          1
+  1761. atlas label                           1
+  1762. main Chinese logotype                 1
+  1763. romanized name                        1
+  1764. model age and ethnicity               1
+  1765. button text                           1
+  1766. school name                           1
+  1767. glow color                            1
+  1768. poet name                             1
+  1769. main city name                        1
+  1770. english location                      1
+  1771. traditional landmark                  1
+  1772. modern landmark                       1
+  1773. city name chinese                     1
+  1774. city name english                     1
+  1775. floating icons                        1
+  1776. release month text                    1
+  1777. facial expressions                    1
+  1778. package type                          1
+  1779. technical details                     1
+  1780. material list                         1
+  1781. region title                          1
+  1782. tie color                             1
+  1783. laptop title text                     1
+  1784. accent petals                         1
+  1785. main letter                           1
+  1786. instrument name                       1
+  1787. left vertical slogan                  1
+  1788. right vertical slogan                 1
+  1789. image count                           1
+  1790. website style                         1
+  1791. Japanese title                        1
+  1792. version subtitle                      1
+  1793. scale label                           1
+  1794. limited offer text                    1
+  1795. partner                               1
+  1796. artist name text                      1
+  1797. album title text                      1
+  1798. current score                         1
+  1799. target score                          1
+  1800. hoodie design                         1
+  1801. artwork title                         1
+  1802. outfit color palette                  1
+  1803. hero archetype                        1
+  1804. giant figure                          1
+  1805. cold color palette                    1
+  1806. warm color palette                    1
+  1807. story                                 1
+  1808. neck accessory                        1
+  1809. visual system                         1
+  1810. brand elements                        1
+  1811. character ethnicity and age           1
+  1812. three animals                         1
+  1813. designer credit                       1
+  1814. Chinese character                     1
+  1815. decorative motifs                     1
+  1816. chest bow color                       1
+  1817. background circle color               1
+  1818. civilization style                    1
+  1819. drawing style                         1
+  1820. main characters                       1
+  1821. character age and gender              1
+  1822. character gender presentation         1
+  1823. tree blossoms                         1
+  1824. film mood                             1
+  1825. character title                       1
+  1826. sweatshirt color                      1
+  1827. jealous character                     1
+  1828. admired character                     1
+  1829. laptop rejection text                 1
+  1830. wall note text                        1
+  1831. hair ribbon color                     1
+  1832. football star                         1
+  1833. flower                                1
+  1834. cat pattern                           1
+  1835. second girl hair color                1
+  1836. ethnic group                          1
+  1837. Japanese unit label                   1
+  1838. headline concept                      1
+  1839. sun color                             1
+  1840. statue subject                        1
+  1841. error message                         1
+  1842. poster material                       1
+  1843. instrument orientation                1
+  1844. amp text                              1
+  1845. trousers                              1
+  1846. play title                            1
+  1847. dates                                 1
+  1848. bottom banner                         1
+  1849. language type                         1
+  1850. headphone model                       1
+  1851. event setting                         1
+  1852. jewelry centerpiece                   1
+  1853. background poster text style          1
+  1854. subject ethnicity and gender          1
+  1855. robot                                 1
+  1856. top design                            1
+  1857. character design                      1
+  1858. mecha design                          1
+  1859. wall slogan                           1
+  1860. franchise mood                        1
+  1861. main sticker text                     1
+  1862. small sticker text one                1
+  1863. small sticker text two                1
+  1864. drama type                            1
+  1865. main label                            1
+  1866. caption line                          1
+  1867. sign title                            1
+  1868. seasonal scene                        1
+  1869. menu                                  1
+  1870. large red sign text                   1
+  1871. main outfit colors                    1
+  1872. notebook text                         1
+  1873. travel itinerary                      1
+  1874. standing subject                      1
+  1875. crouching subject                     1
+  1876. fashion                               1
+  1877. room theme                            1
+  1878. profession                            1
+  1879. attribute                             1
+  1880. race                                  1
+  1881. company sign text                     1
+  1882. menu board text                       1
+  1883. second character                      1
+  1884. cover theme text                      1
+  1885. status                                1
+  1886. school uniform                        1
+  1887. lines                                 1
+  1888. volume number                         1
+  1889. English title                         1
+  1890. main color                            1
+  1891. player surname                        1
+  1892. player first name                     1
+  1893. welcome text                          1
+  1894. equipment                             1
+  1895. conductor                             1
+  1896. soda flavor and color                 1
+  1897. skewered topping                      1
+  1898. ice cream flavor                      1
+  1899. artist name Japanese                  1
+  1900. album title Japanese                  1
+  1901. genre tagline Japanese                1
+  1902. lighting atmosphere                   1
+  1903. large city text                       1
+  1904. cheek tattoo                          1
+  1905. earring text                          1
+  1906. neon sign text                        1
+  1907. screen text                           1
+  1908. couple                                1
+  1909. side inscription                      1
+  1910. hakama color                          1
+  1911. weather mood                          1
+  1912. product subtitle                      1
+  1913. temperature text                      1
+  1914. condition text                        1
+  1915. landscape theme                       1
+  1916. red gown color                        1
+  1917. center gown color                     1
+  1918. right gown color                      1
+  1919. event theme                           1
+  1920. ball logo                             1
+  1921. composer and work title               1
+  1922. royal figure                          1
+  1923. composer portrait                     1
+  1924. fruit or product                      1
+  1925. left cloud label                      1
+  1926. right cloud label                     1
+  1927. bottom cloud label                    1
+  1928. background paper color                1
+  1929. main circle color                     1
+  1930. architecture material                 1
+  1931. painting style                        1
+  1932. musical work                          1
+  1933. composer                              1
+  1934. character age and vibe                1
+  1935. celebrity name                        1
+  1936. main Chinese name                     1
+  1937. corner label                          1
+  1938. campaign name                         1
+  1939. discount text                         1
+  1940. magic circle                          1
+  1941. vertical neon sign text               1
+  1942. small neon subtitle                   1
+  1943. primary neon color palette            1
+  1944. camera framing                        1
+  1945. cloak color                           1
+  1946. board                                 1
+  1947. character count                       1
+  1948. image                                 1
+  1949. cinema sign text                      1
+  1950. concession sign text                  1
+  1951. wayfinding sign text                  1
+  1952. reflection object                     1
+  1953. race track                            1
+  1954. cockpit sponsor text                  1
+  1955. background title                      1
+  1956. left cover line                       1
+  1957. main cover word                       1
+  1958. cat breed                             1
+  1959. main costume color                    1
+  1960. room wall color                       1
+  1961. top left headline                     1
+  1962. bottom left headline                  1
+  1963. bottom right headline                 1
+  1964. series name                           1
+  1965. mood label                            1
+  1966. playlist title                        1
+  1967. primary color palette                 1
+  1968. toy character                         1
+  1969. feature text                          1
+  1970. product code                          1
+  1971. arcade sign text                      1
+  1972. emphasis word                         1
+  1973. footer label                          1
+  1974. team livery                           1
+  1975. shop name                             1
+  1976. passenger hair color                  1
+  1977. driver hair color                     1
+  1978. uniform color                         1
+  1979. attire style                          1
+  1980. bouquet style                         1
+  1981. glowing emblem color                  1
+  1982. face censor                           1
+  1983. chest marking                         1
+  1984. nurse uniform                         1
+  1985. hospital location                     1
+  1986. tablet text                           1
+  1987. farewell text                         1
+  1988. service name                          1
+  1989. local script label                    1
+  1990. page number                           1
+  1991. tagline line 3                        1
+  1992. release year                          1
+  1993. series logo text                      1
+  1994. year count text                       1
+  1995. main ingredient                       1
+  1996. special ingredients                   1
+  1997. plant name                            1
+  1998. top subtitle                          1
+  1999. game subtitle                         1
+  2000. bottom call to action                 1
+  2001. search label                          1
+  2002. dragon parchment text                 1
+  2003. card type                             1
+  2004. name tag text                         1
+  2005. school sign text                      1
+  2006. line style                            1
+  2007. decoration amount                     1
+  2008. cocktail name                         1
+  2009. paper cut style                       1
+  2010. background mood                       1
+  2011. inner wear color                      1
+  2012. tie pattern                           1
+  2013. ancient city                          1
+  2014. ancient city name                     1
+  2015. version text                          1
+  2016. left main calligraphy                 1
+  2017. right main calligraphy                1
+  2018. large background text                 1
+  2019. tracksuit color                       1
+  2020. accent ribbon color                   1
+  2021. large title word                      1
+  2022. left character name                   1
+  2023. right character name                  1
+  2024. speaker name                          1
+  2025. dialogue line                         1
+  2026. collage shapes                        1
+  2027. bouquet color                         1
+  2028. bottom credit                         1
+  2029. artist style                          1
+  2030. seasonal decoration                   1
+  2031. top masthead text                     1
+  2032. season slogan                         1
+  2033. Chinese subheadline                   1
+  2034. type label                            1
+  2035. origin label                          1
+  2036. small left phrase                     1
+  2037. right slogan                          1
+  2038. production line                       1
+  2039. legendary destination                 1
+  2040. promotional copy                      1
+  2041. top headline                          1
+  2042. app tagline                           1
+  2043. destination subtitle                  1
+  2044. evaluation term                       1
+  2045. actor names                           1
+  2046. headband color                        1
+  2047. car one label                         1
+  2048. car two label                         1
+  2049. car three label                       1
+  2050. car four label                        1
+  2051. top right phrase                      1
+  2052. top label                             1
+  2053. bottom label                          1
+  2054. brand logo text                       1
+  2055. wrapper headline                      1
+  2056. book author                           1
+  2057. giant background word                 1
+  2058. Korean quote                          1
+  2059. right tagline                         1
+  2060. preservation                          1
+  2061. website title                         1
+  2062. hero headline                         1
+  2063. primary button text                   1
+  2064. crew headline                         1
+  2065. shirt logo text                       1
+  2066. character pair                        1
+  2067. poem line                             1
+  2068. privacy block color                   1
+  2069. room lighting                         1
+  2070. background decor                      1
+  2071. facility name                         1
+  2072. sector label                          1
+  2073. door number                           1
+  2074. tower number                          1
+  2075. barrier text                          1
+  2076. garment                               1
+  2077. hood color                            1
+  2078. nail palette                          1
+  2079. nail shape                            1
+  2080. task app label                        1
+  2081. note app label                        1
+  2082. band panel label                      1
+  2083. left vertical tagline                 1
+  2084. main cover headline                   1
+  2085. mural style                           1
+  2086. 发色                                    1
+  2087. 眼睛颜色                                  1
+  2088. 和服颜色                                  1
+  2089. 竖排文字                                  1
+  2090. キャラクター                                1
+  2091. 舞台                                    1
+  2092. SNS UI                                1
+  2093. number of students                    1
+  2094. student type                          1
+  2095. tournament text                       1
+  2096. host countries                        1
+  2097. main lettering phrase                 1
+  2098. national colors                       1
+  2099. team nickname                         1
+  2100. 角色类型                                  1
+  2101. 脸部遮挡颜色                                1
+  2102. groom description                     1
+  2103. bride description                     1
+  2104. concept title                         1
+  2105. gallery name                          1
+  2106. cafe subject                          1
+  2107. streetwear subject                    1
+  2108. winter subject                        1
+  2109. anime character name                  1
+
+==============================================================================
+【四】★ 补做 §八-5：中国画子集里，画种在固定、画法在槽位？
+==============================================================================
+  中国画子集（内容判定，词表 37 词）＝ 969 条 = 17.77%
+  其中【含槽位】者 548 条 = 该子集的 56.55%
+
+  ---- 4.1 画种词与画法词，各落在哪一侧（记录数，分母＝中国画子集 969）----
+  词                固定文本       槽位默认      固定:槽位
+  国画                  4          0        4:0
+  中国画                 0          0        0:0
+  水墨画                31          2       15.5
+  工笔画                 6          1        6.0
+  文人画                 2          0        2:0
+  山水画                14          1       14.0
+  工笔                 21          1       21.0
+  写意                 21          1       21.0
+  水墨                162         13       12.5
+  泼墨                 14          0       14:0
+  淡彩                 23          3        7.7
+  重彩                  4          0        4:0
+  青绿                 82         10        8.2
+  白描                  3          0        3:0
+  笔法                  0          0        0:0
+  墨色                 45          1       45.0
+
+  ---- 4.2 该子集内出现过的槽位名（哪些东西被当作"可协商"）----
+      character name                    86
+      hair color                        74
+      subject                           69
+      headline text                     40
+      city name                         35
+      brand name                        24
+      theme                             24
+      style                             22
+      clothing                          20
+      main title                        19
+      subtitle text                     19
+      outfit                            19
+      city                              16
+      name                              15
+      correction                        15
+      background color                  15
+      location                          14
+      tagline                           14
+      color palette                     13
+      background                        13
+      aspect ratio                      12
+      mood                              11
+      art style                         11
+      accent color                      11
+      main title text                   10
+      country                           10
+      subtitle                          10
+      title text                         9
+      character description              8
+      character                          8
+
+  ---- 4.3 ★ 默认值含画论语汇的槽位，都是些什么槽 ----
+      hair color                         5
+      style                              3
+      art style                          3
+      background style                   2
+      visual style                       2
+      color palette                      2
+      calligraphy text                   2
+      eye color                          1
+      main green color                   1
+      detail                             1
+      background colors                  1
+      imagery                            1
+      texture                            1
+      print                              1
+      illustration style                 1
+      character role                     1
+      scene                              1
+      paper color                        1
+      art texture                        1
+      background element                 1
+      main color palette                 1
+      composition focus                  1
+      type                               1
+      medium                             1
+      prop                               1
+      mood                               1
+      drawing style                      1
+      landscape theme                    1
+      character name                     1
+      subtitle text                      1
+
+  ---- 4.4 ★ 铁证样本：默认值含画论语汇的槽位，逐条列（上限 60）----
+   [古风大凶美女] slot=background style default=室内水墨墙，配有松树和山峦
+   [动漫or二次元] slot=eye color default=青绿色
+   [中国古代] slot=style default=工笔画风格
+   [中国古代] slot=visual style default=电影级写实中国水墨画美学
+   [书画作品] slot=main green color default=朦胧青绿色
+   [中国古代] slot=art style default=带有柔和淡彩笔触的中国古典山水画
+   [动漫or二次元] slot=detail default=水墨飞溅笔触
+   [手绘人物涂鸦插画] slot=background colors default=青绿色/水蓝色和深粉彩色
+   [书画作品] slot=imagery default=胭脂色花枝，翠绿色叶片，留白背景，微小人物，极淡的远山
+   [动漫] slot=texture default=日式水墨 + 水彩纹理
+   [大凶美女] slot=print default=大型宝蓝色玫瑰、叶片和写意花卉藤蔓印花
+   [手工剪纸] slot=color palette default=柔和的淡彩色
+   [复古报纸] slot=illustration style default=表现力强的水墨素描和混合媒介插画风格
+   [动漫个人海报] slot=calligraphy text default=竖排古典毛笔书法及红色印章
+   [治愈风格] slot=character role default=山水女神
+   [治愈风格] slot=scene default=高山水榭与青绿山水秘境
+   [艺术女性海报] slot=visual style default=超细节编辑时尚摄影与超现实日式水墨插画的融合
+   [高达] slot=style default=水彩与水墨风格
+   [城市海报] slot=paper color default=宣纸象牙白
+   [动漫or二次元] slot=art texture default=手绘涂鸦风格，水墨飞溅笔触
+   [高端男性杂志] slot=background element default=巨大的红色圆形太阳或印章，中心带有抽象的黑色笔触符号
+   [人物背景] slot=art style default=空灵的中国水墨与水彩
+   [人物背景] slot=calligraphy text default=山水如梦
+   [人物背景] slot=main color palette default=青蓝色、暖金色、奶油色、淡粉色和炭墨色
+   [人物背景] slot=composition focus default=由山水与飘逸长发构成的女性剪影
+   [表情包] slot=type default=印章式
+   [纯人物摄影] slot=color palette default=珊瑚粉、桃色、水蓝色、青绿色和柔和的橙色
+   [人物背景] slot=medium default=水墨
+   [人物背景] slot=art style default=水彩与水墨双重曝光
+   [可爱动漫] slot=hair color default=青绿色
+   [纯人物摄影] slot=prop default=砚台
+   [可爱动漫] slot=hair color default=青绿色双马尾
+   [动漫or二次元] slot=hair color default=明亮的青绿色
+   [书画作品] slot=style default=传统中国水墨画
+   [文字+人物海报] slot=mood default=氛围感强且怀旧的意境
+   [动漫or二次元] slot=hair color default=青绿色
+   [9宫格] slot=drawing style default=淡彩铅笔
+   [中国古代] slot=landscape theme default=蓝绿色东亚山水
+   [动漫or二次元] slot=character name default=一位面部留白的柔和色调公主法师
+   [城市海报] slot=subtitle text default=六朝古都·山水金陵
+   [二次元大凶美女] slot=hair color default=深青绿色
+   [中国古代] slot=subject default=花鸟画中的鸟儿
+   [不漏诱惑] slot=background decor default=字画卷轴、木质窗棂、纸灯笼和两支蜡烛
+   [古风大凶美女] slot=background style default=室内水墨墙面配松树和山峦
+      合计 44 个这样的槽位

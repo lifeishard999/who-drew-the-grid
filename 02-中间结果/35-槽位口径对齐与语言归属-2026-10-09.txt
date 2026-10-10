@@ -1,0 +1,164 @@
+槽位口径对齐与语言归属   语料 = 5452 条
+
+【一】精确口径复核（与 26 号对齐）
+  ① 直引号式 P : 记录   2932   槽位   8145   （26 号：2,932 / 8,145）
+  ② 转义式   E : 记录    233   槽位    945   （26 号：  233 /   945）
+  ③ 两者皆有的记录 :      0                    （26 号：    0）
+  ★ 并集       : 记录   3165   槽位   9090   （26 号：3,165 / 9,090）
+
+【二】★ 宽松口径（34 号，9,118）比精确口径多出来的部分
+  差集：
+    记录数 12   不同串 28
+
+  ---- 逐条原文（去重后全部列出，按出现次数降序）----
+    ×1    id=26842   {argument name="keywords" default="\"ENERGY\", \"BILLS\", \"MONEY\", \"SCHOOL\", \"SUCCESS\""}
+    ×1    id=23178   {argument name="typography text" default=""PRECISION""}
+    ×1    id=18600   {argument name=\"pool size label\" default=\"20'-0\" X 10'-0\"\"}
+    ×1    id=23180   {argument name="magazine name" default=""COSTAKONAR""}
+    ×1    id=25992   {argument name="graphic element" default="数字 \"2\""}
+    ×1    id=20531   {argument name=\"color palette\" default=\"[\"柔奶油色\", \"灰粉色\", \"鼠尾草绿\", \"暖桃色\", \"天蓝色\", \"蜂蜜黄\"]\"}
+    ×1    id=28990   {argument name="facial balance" default="优先考虑真实人物的自然面部比例，避免过度缩小脸部或放大眼睛”}
+    ×1    id=28990   {argument name="composition" default="不要过度安排构图；将其制作成一张在角度和留白上略有不规则的快照”}
+    ×1    id=26835   {argument name="brand name" default="品牌名称 \"SOLÈNE\""}
+    ×1    id=34650   {argument name=\\"active tab\\" default=\\"推荐\\"}
+    ×1    id=34650   {argument name=\\"streamer name\\" default=\\"小甜心✨\\"}
+    ×1    id=34650   {argument name=\\"chat message 1\\" default=\\"唱得太好听了吧～\\"}
+    ×1    id=34650   {argument name=\\"chat message 2\\" default=\\"声音好温柔，爱了爱了\\"}
+    ×1    id=34650   {argument name=\\"input placeholder\\" default=\\"说点什么...\\"}
+    ×1    id=34693   {argument name=\\"model pose\\" default=\\"闭眼，脸部向上倾斜，表情宁静\\"}
+    ×1    id=34693   {argument name=\\"fruit type\\" default=\\"柚子\\"}
+    ×1    id=34693   {argument name=\\"background scene\\" default=\\"明亮的蓝天，漂浮着失焦的水滴和灿烂的阳光\\"}
+    ×1    id=34693   {argument name=\\"main headline\\" default=\\"ゆず香る、新しいわたし。\\"}
+    ×1    id=34693   {argument name=\\"product name\\" default=\\"YUZU SPARK\\"}
+    ×1    id=34727   {argument name=\\"background style\\" default=\\"复古纹理羊皮纸\\"}
+    ×1    id=34727   {argument name=\\"staircase material\\" default=\\"逼真的纹理石块\\"}
+    ×1    id=34727   {argument name=\\"organism style\\" default=\\"高度精细的照片级真实 3D 渲染\\"}
+    ×1    id=34727   {argument name=\\"main title\\" default=\\"人类演化\\"}
+    ×1    id=34727   {argument name=\\"future evolution concept\\" default=\\"带有问号的发光宇宙剪影\\"}
+    ×1    id=34731   {argument name=\\"background color\\" default=\\"柔和的紫蓝色渐变\\"}
+    ×1    id=34731   {argument name=\\"product name\\" default=\\"Meta Quest 3\\"}
+    ×1    id=34731   {argument name=\\"main catchphrase\\" default=\\"以全新的结构，重塑全新的现实。\\"}
+    ×1    id=34731   {argument name=\\"bottom headline\\" default=\\"体验，源于结构的进化。\\"}
+
+【三】槽位名与默认值的语言归属（★ 在已对齐的精确口径上）
+  ── 直引号式 P：槽位 8145 个，其中带 default 的 8145 个
+     槽位名 name：
+       纯拉丁              8129   99.80%
+       纯汉字                15    0.18%
+       其他                  1    0.01%
+     默认值 default：
+       纯汉字              5602   68.78%
+       纯拉丁              2016   24.75%
+       中英混               304    3.73%
+       其他                222    2.73%
+       空串                  1    0.01%
+
+  ── 转义式 E：槽位 945 个，其中带 default 的 945 个
+     槽位名 name：
+       纯拉丁               919   97.25%
+       纯汉字                26    2.75%
+     默认值 default：
+       纯汉字               627   66.35%
+       纯拉丁               236   24.97%
+       中英混                48    5.08%
+       其他                 34    3.60%
+
+  ── 并集 P∪E：槽位 9090 个，其中带 default 的 9090 个
+     槽位名 name：
+       纯拉丁              9048   99.54%
+       纯汉字                41    0.45%
+       其他                  1    0.01%
+     默认值 default：
+       纯汉字              6229   68.53%
+       纯拉丁              2252   24.77%
+       中英混               352    3.87%
+       其他                256    2.82%
+       空串                  1    0.01%
+
+【四】交叉：名 × 值（并集）
+   纯拉丁       × 纯汉字          6194   68.14%
+   纯拉丁       × 纯拉丁          2248   24.73%
+   纯拉丁       × 中英混           349    3.84%
+   纯拉丁       × 其他            256    2.82%
+   纯汉字       × 纯汉字            34    0.37%
+   纯汉字       × 纯拉丁             4    0.04%
+   纯汉字       × 中英混             3    0.03%
+   纯拉丁       × 空串              1    0.01%
+   其他        × 纯汉字             1    0.01%
+
+【五】槽位名前 40（并集）
+    638  hair color
+    485  subject
+    457  character name
+    243  outfit
+    239  headline text
+    133  clothing
+    128  location
+    120  style
+    117  brand name
+    103  background
+    102  hair style
+     92  color palette
+     92  setting
+     91  theme
+     89  subtitle text
+     83  main title
+     79  character
+     79  city name
+     78  tea name
+     69  character description
+     68  background color
+     57  aspect ratio
+     57  eye color
+     54  dress color
+     49  tagline
+     48  age
+     48  mood
+     46  art style
+     44  accent color
+     44  subtitle
+     40  product name
+     38  person
+     37  English tea name
+     36  city
+     36  ethnicity
+     33  magazine title
+     30  outfit color
+     30  outfit style
+     30  lighting
+     28  title text
+
+【六】槽位名里含汉字的全部（并集，逐条列）
+      3  发色
+      2  眼睛颜色
+      2  记分牌文字
+      2  时尚风格
+      2  调色板
+      2  地点氛围
+      2  发色与发型
+      1  和服颜色
+      1  竖排文字
+      1  舞台
+      1  角色类型
+      1  脸部遮挡颜色
+      1  黑板标题
+      1  核心公式
+      1  女生发色与发型
+      1  女生服装
+      1  男生发色与发型
+      1  男生服装
+      1  整体氛围
+      1  角色名称
+      1  头发颜色
+      1  服装风格
+      1  左上标签
+      1  制服风格
+      1  制服主色调
+      1  主体服装
+      1  记分牌上的球队
+      1  比分与时间
+      1  日语对话和标牌
+      1  金发角色发色
+      1  金发角色上衣颜色
+      1  黑发角色发色
+      1  黑发角色外套颜色

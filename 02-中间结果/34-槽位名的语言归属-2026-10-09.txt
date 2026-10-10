@@ -1,0 +1,66 @@
+槽位的语言归属   语料 = 5452 条
+
+原始命中（含属性不全者）: 9118
+  其中 direct : 9118
+  其中 escaped: 0
+含槽位的记录数（去重）: 3169
+
+★ 属性齐全（name 与 default 都在）: 9097 个槽位
+
+【槽位名 name 的书写系统】
+  纯拉丁         9055   99.54%
+  纯汉字           41    0.45%
+  其他             1    0.01%
+
+【默认值 default 的书写系统】
+  纯汉字         6231   68.50%
+  纯拉丁         2252   24.76%
+  中英混          352    3.87%
+  其他           258    2.84%
+  空串             4    0.04%
+
+【交叉表】名 × 值
+名       值            槽位数       占比
+纯拉丁     纯汉字         6196   68.11%
+纯拉丁     纯拉丁         2248   24.71%
+纯拉丁     中英混          349    3.84%
+纯拉丁     其他           258    2.84%
+纯汉字     纯汉字           34    0.37%
+纯拉丁     空串             4    0.04%
+纯汉字     纯拉丁            4    0.04%
+纯汉字     中英混            3    0.03%
+其他      纯汉字            1    0.01%
+
+【最常见的槽位名（前 30）】
+    638  hair color
+    485  subject
+    457  character name
+    243  outfit
+    239  headline text
+    133  clothing
+    128  location
+    120  style
+    118  brand name
+    103  background
+    102  hair style
+     93  color palette
+     92  setting
+     91  theme
+     89  subtitle text
+     83  main title
+     79  character
+     79  city name
+     78  tea name
+     69  character description
+     68  background color
+     57  aspect ratio
+     57  eye color
+     54  dress color
+     49  tagline
+     48  age
+     48  mood
+     46  art style
+     44  subtitle
+     44  accent color
+
+【转义式原样样本（看实际形态，5 条）】
