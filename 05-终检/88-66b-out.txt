@@ -112,7 +112,7 @@
   71-修订版字数与一致性核-改前-第十一封信.py    字符  26,862  行   613  CRLF    0  裸CR    0
   论文-谁划的格子-语言修订版-改前-摘要改稿.md    字符  20,345  行   262  CRLF    0  裸CR    0
   71-修订版字数与一致性核-改前-摘要改稿（复原件）.py 字符  27,251  行   618  CRLF    0  裸CR    0
-  MEMORY.md                    字符   8,647  行    42  CRLF    0  裸CR    0
+  MEMORY.md                    字符   8,717  行    42  CRLF    0  裸CR    0
   pku-conference-paper.md      字符 203,576  行  2819  CRLF    0  裸CR    0
   shuixian-corpus.md           字符  13,876  行   269  CRLF    0  裸CR    0
   85f-记忆同步.py                  字符   6,379  行   109  CRLF    0  裸CR    0
