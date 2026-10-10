@@ -8,6 +8,7 @@ _填DOI · DOI 与仓库地址铸出后，一次替换 README 与 NOTICE 里的�
 
 会替换 README.md、NOTICE-语料来源与署名.md 里的
     10.5281/zenodo.XXXXXXX   →  DOI
+    [DOI]                    →  DOI（声明正文里用的记号，也是同一个 DOI）
     [REPO]                   →  仓库地址（给了第二个参数才替换）
 并删掉 README 里那行 <!-- ← 铸出后… --> 的提示注释。
 替换前各留一份 .bak（不存在才写，不覆盖已有备份）。
@@ -39,6 +40,10 @@ if REPO and not re.match(r'^https://github\.com/\S+/\S+$', REPO):
 HERE = os.path.dirname(os.path.abspath(__file__))
 TARGETS = ['README.md', 'NOTICE-语料来源与署名.md']
 OLD_DOI = '10.5281/zenodo.XXXXXXX'
+# ★ 第一版漏了这个记号：README §五「数据可用性声明」的正文里用的是 [DOI]，
+#   不是 10.5281/zenodo.XXXXXXX，所以填完 DOI 后声明正文里仍是空空一个 [DOI]。
+#   漏的偏偏是给论文直接抄的那两段——占位符必须与正文实际写法一致。
+OLD_DOI2 = '[DOI]'
 OLD_REPO = '[REPO]'
 
 n_doi = n_repo = 0
@@ -49,7 +54,7 @@ for fn in TARGETS:
         continue
     with open(fp, 'r', encoding='utf-8', newline='') as f:
         t = f.read()
-    c_doi = t.count(OLD_DOI)
+    c_doi = t.count(OLD_DOI) + t.count(OLD_DOI2)
     c_repo = t.count(OLD_REPO)
     if not c_doi and not (REPO and c_repo):
         print('· 无待替换占位符：%s' % fn)
@@ -57,7 +62,7 @@ for fn in TARGETS:
     bak = fp + '.bak'
     if not os.path.exists(bak):
         shutil.copy2(fp, bak)
-    t = t.replace(OLD_DOI, DOI)
+    t = t.replace(OLD_DOI, DOI).replace(OLD_DOI2, DOI)
     if REPO:
         t = t.replace(OLD_REPO, REPO)
     t = re.sub(r'[ \t]*<!-- ← 铸出后由 `_填DOI\.py` 一次性替换 -->\r?\n', '', t)
@@ -77,7 +82,8 @@ else:
         fp = os.path.join(HERE, fn)
         if os.path.exists(fp):
             with open(fp, 'r', encoding='utf-8', newline='') as f:
-                left += f.read().count(OLD_REPO)
+                t2 = f.read()
+                left += t2.count(OLD_REPO) + t2.count(OLD_DOI) + t2.count(OLD_DOI2)
     if left:
-        print('⚠ 还有 %d 处 [REPO] 没填——把仓库地址作为第二个参数再跑一次。' % left)
+        print('⚠ 还有 %d 处占位符没填（多为 [REPO]）——把仓库地址作为第二个参数再跑一次。' % left)
 print('★ 记得同时把论文语言修订版里的数据可用性表述换成同一串 DOI。')

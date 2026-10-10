@@ -45,8 +45,8 @@
 若你在自己的研究中使用本包的脚本或词表，请同时回链**语料仓库**与本**复现包**：
 
 ```
-宋亚宁 (Yaning Song). 数据与脚本：《谁划的格子——中文 AI 绘画提示词模板的可写性》核数复现包 (v1.0.0).
-Zenodo, 2026. https://doi.org/10.5281/zenodo.XXXXXXX
+宋亚宁 (Yaning Song). 数据与脚本：《谁划的格子——中文 AI 绘画提示词模板的可写性》核数复现包.
+Zenodo, 2026. https://doi.org/10.5281/zenodo.23277345（概念 DOI，指向本包全部版本）
 
 语料：水仙的AI提示词. https://github.com/BaYue-SYJ/shuixian-prompts
      （本文所据 commit e2c6743b90e0bbf2f3a4c42eb218e92835d4a9a8）

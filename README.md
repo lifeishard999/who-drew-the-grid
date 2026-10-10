@@ -2,11 +2,10 @@
 
 **论文**：《谁划的格子——中文 AI 绘画提示词模板的可写性》
 **作者**：宋亚宁（Yaning Song，云南大学）
-**本包版本**：v1.0.0 ｜ 2026-10-10
-**DOI**：`10.5281/zenodo.XXXXXXX`　<!-- ← 铸出后由 `_填DOI.py` 一次性替换 -->
-
+**本包版本**：v1.0.1 ｜ 2026-10-10
+**DOI**：<https://doi.org/10.5281/zenodo.23277345>（概念 DOI，永远指向本包最新版本）
 本包收录该文全部**核数脚本、中间结果、词表与逐条判定台账**，供审稿人与读者复算。
-共 93 个文件 / 约 0.6 MB。**语料本体不在包内**（见下节）。
+共 94 个文件 / 约 0.6 MB。**语料本体不在包内**（见下节）。
 
 ---
 
@@ -128,18 +127,18 @@ python -I 60-注7零汉字三档复核.py | Out-File -Encoding utf8 60out.txt
 
 ## 五 · 数据可用性声明（论文用）
 
-以下两段可直接采用，DOI 铸出后替换 `[DOI]`。
+以下两段可直接采用。
 
 **中文**
 
-> 数据与脚本见 [DOI]（仓库 [REPO]）。本文语料为公开仓库 `BaYue-SYJ/shuixian-prompts` 的
+> 数据与脚本见 https://doi.org/10.5281/zenodo.23277345（仓库 https://github.com/lifeishard999/who-drew-the-grid）。本文语料为公开仓库 `BaYue-SYJ/shuixian-prompts` 的
 > `shuixian-unified/` 版（5,452 条），版本钉于 commit `e2c6743b`（2026-09-20）；
 > 依该仓库许可，语料本体不在本文复现包内重发。全部核数脚本、中间结果、词表与
 > 逐条判定台账已存档于公开仓库并铸 DOI，可逐数复算。
 
 **English**
 
-> Data and code are available at [DOI] (repository: [REPO]). The corpus is the
+> Data and code are available at https://doi.org/10.5281/zenodo.23277345 (repository: https://github.com/lifeishard999/who-drew-the-grid). The corpus is the
 > `shuixian-unified/` release (5,452 prompts) of the public repository
 > `BaYue-SYJ/shuixian-prompts`, pinned at commit `e2c6743b` (20 September 2026).
 > In accordance with that repository's licence, the corpus itself is not redistributed
@@ -152,11 +151,11 @@ python -I 60-注7零汉字三档复核.py | Out-File -Encoding utf8 60out.txt
 ## 六 · 引用
 
 ```
-宋亚宁 (Yaning Song). 数据与脚本：《谁划的格子——中文 AI 绘画提示词模板的可写性》核数复现包 (v1.0.0).
-Zenodo, 2026. https://doi.org/10.5281/zenodo.XXXXXXX
+宋亚宁 (Yaning Song). 数据与脚本：《谁划的格子——中文 AI 绘画提示词模板的可写性》核数复现包.
+Zenodo, 2026. https://doi.org/10.5281/zenodo.23277345（概念 DOI，指向本包全部版本）
 ```
 
-仓库地址：[REPO]
+仓库地址：https://github.com/lifeishard999/who-drew-the-grid
 
 ---
 
