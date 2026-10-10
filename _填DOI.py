@@ -86,4 +86,3 @@ else:
                 left += t2.count(OLD_REPO) + t2.count(OLD_DOI) + t2.count(OLD_DOI2)
     if left:
         print('⚠ 还有 %d 处占位符没填（多为 [REPO]）——把仓库地址作为第二个参数再跑一次。' % left)
-print('★ 记得同时把论文语言修订版里的数据可用性表述换成同一串 DOI。')
